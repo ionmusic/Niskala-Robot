@@ -403,6 +403,6 @@ def connection_status(func):
 
 
 # Workaround for circular import with connection.py
-from Yuriko.modules import connection
+from Niskala.modules import connection
 
 connected = connection.connected
