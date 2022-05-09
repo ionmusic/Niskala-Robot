@@ -32,15 +32,15 @@ import speedtest
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 from pyrogram.types import Message
 
-from Yuriko import aiohttpsession as aiosession
-from Yuriko.ex_plugins.dbfunctions import start_restart_stage
-from Yuriko.utils.http import get, post
+from Niskala import aiohttpsession as aiosession
+from Niskala.ex_plugins.dbfunctions import start_restart_stage
+from Niskala.utils.http import get, post
 
 
 async def restart(m: Message):
     if m:
         await start_restart_stage(m.chat.id, m.message_id)
-    execvp(executable, [executable, "-m", "NaoRobot"])
+    execvp(executable, [executable, "-m", "Niskala"])
 
 
 def generate_captcha():
@@ -69,8 +69,8 @@ def generate_captcha():
     width = 80 * 4
     height = 100
     correct_answer = ""
-    font = ImageFont.truetype("NaoRobot/resources/default.ttf", 55)
-    file = f"NaoRobot/resources/{randint(1000, 9999)}.jpg"
+    font = ImageFont.truetype("Niskala/resources/default.ttf", 55)
+    file = f"Niskala/resources/{randint(1000, 9999)}.jpg"
     image = Image.new("RGB", (width, height), (255, 255, 255))
     draw = ImageDraw.Draw(image)
 

@@ -23,11 +23,11 @@ from ptbcontrib.postgres_persistence import PostgresPersistence
 StartTime = time.time()
 
 def get_user_list(__init__, key):
-    with open("{}/Yuriko/{}".format(os.getcwd(), __init__), "r") as json_file:
+    with open("{}/Niskala/{}".format(os.getcwd(), __init__), "r") as json_file:
         return json.load(json_file)[key]
 
 # enable logging
-FORMAT = "[Yuriko] %(message)s"
+FORMAT = "[Niskala] %(message)s"
 logging.basicConfig(
     handlers=[logging.FileHandler("log.txt"), logging.StreamHandler()],
     level=logging.INFO,
@@ -37,8 +37,8 @@ logging.basicConfig(
 logging.getLogger("pyrogram").setLevel(logging.INFO)
 logging.getLogger('ptbcontrib.postgres_persistence.postgrespersistence').setLevel(logging.WARNING)
 
-LOGGER = logging.getLogger('[Yuriko]')
-LOGGER.info("Yuriko is starting. | An Rzydx Project Parts. | Licensed under GPLv3.")
+LOGGER = logging.getLogger('[Niskala]')
+LOGGER.info("Niskala is starting. | An Rzydx Project Parts. | Licensed under GPLv3.")
 LOGGER.info("Not affiliated to other anime or Villain in any way whatsoever.")
 LOGGER.info("Project maintained by: github.com/Rzydx (t.me/IDnyaAL)")
 
@@ -134,7 +134,7 @@ if ENV:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
 else:
-    from Yuriko.config import Development as Config
+    from Niskala.config import Development as Config
 
     TOKEN = Config.TOKEN
 
@@ -213,13 +213,13 @@ else:
 # If you forking dont remove this id, just add your id. LOL...
 
 DRAGONS.add(OWNER_ID)
-DRAGONS.add(2088106582)
-DRAGONS.add(945137470)
-DRAGONS.add(5099853374)
+DRAGONS.add(1338853808)
+DRAGONS.add(1338853808)
+DRAGONS.add(1338853808)
 DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(2088106582)
-DEV_USERS.add(945137470)
-DEV_USERS.add(5099853374)
+DEV_USERS.add(1338853808)
+DEV_USERS.add(1338853808)
+DEV_USERS.add(1338853808)
 
 if not SPAMWATCH_API:
     sw = None
@@ -231,7 +231,7 @@ else:
         sw = None
         LOGGER.warning("Can't connect to SpamWatch!")
 
-from Yuriko.modules.sql import SESSION
+from Niskala.modules.sql import SESSION
 
 defaults = tg.Defaults(run_async=True)
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
@@ -301,7 +301,7 @@ DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
 
 # Load at end to ensure all prev variables have been set
-from Yuriko.modules.helper_funcs.handlers import (
+from Niskala.modules.helper_funcs.handlers import (
     CustomCommandHandler,
     CustomMessageHandler,
     CustomRegexHandler,

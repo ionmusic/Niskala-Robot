@@ -6,12 +6,12 @@ import time
 import re
 import sys
 import traceback
-import Yuriko.modules.sql.users_sql as sql
+import Niskala.modules.sql.users_sql as sql
 from sys import argv
 from typing import Optional
 from telegram import __version__ as peler
 from platform import python_version as memek
-from Yuriko import (
+from Niskala import (
     ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
@@ -32,9 +32,9 @@ from Yuriko import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from Yuriko.modules import ALL_MODULES
-from Yuriko.modules.helper_funcs.chat_status import is_user_admin
-from Yuriko.modules.helper_funcs.misc import paginate_modules
+from Niskala.modules import ALL_MODULES
+from Niskala.modules.helper_funcs.chat_status import is_user_admin
+from Niskala.modules.helper_funcs.misc import paginate_modules
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
@@ -79,7 +79,7 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-yurikorobot_IMG = "https://telegra.ph/file/b26f8a844221353be9fb0.jpg"
+NISKALA_IMG = "https://telegra.ph/file/b26f8a844221353be9fb0.jpg"
 
 PM_START_TEXT = """
 `ʜᴇʟʟᴏ {} ɪ'ᴍ ɴɪsᴋᴀʟᴀ!`
@@ -90,7 +90,7 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ ɴɪsᴋᴀʟᴀ", callback_data="yurikorobot_basichelp"),
+        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ ɴɪsᴋᴀʟᴀ", callback_data="niskala_about"),
     ],
     [
         InlineKeyboardButton(text="ɢᴇᴛ ʜᴇʟᴘ", callback_data="help_back"),
@@ -126,7 +126,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("Yuriko.modules." + module_name)
+    imported_module = importlib.import_module("Niskala.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -359,9 +359,9 @@ def help_button(update, context):
 
 
 
-def yurikorobot_about_callback(update, context):
+def niskala_about_callback(update, context):
     query = update.callback_query
-    if query.data == "yurikorobot_":
+    if query.data == "niskala_":
         query.message.edit_text(
             text=""" *Niskala* - `A bot to manage your groups with additional features!`
             \n`Here the basic help regarding use of Niskala.`
@@ -384,7 +384,7 @@ def yurikorobot_about_callback(update, context):
                 ]
             ),
         )
-    elif query.data == "yurikorobot_back":
+    elif query.data == "niskala_back":
         first_name = update.effective_user.first_name
         uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
@@ -398,7 +398,7 @@ def yurikorobot_about_callback(update, context):
                 timeout=60,
                 disable_web_page_preview=False,
         )
-    elif query.data == "yurikorobot_basichelp":
+    elif query.data == "niskala_about":
         query.message.edit_text(
             text=f"*Berikut Bantuan Dasar Tentang Cara menggunakan Saya?*"
             
@@ -412,21 +412,21 @@ def yurikorobot_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Aᴅᴍɪɴ", callback_data="yurikorobot_admin"),
-                    InlineKeyboardButton(text="Nᴏᴛᴇꜱ", callback_data="yurikorobot_notes"),
+                    InlineKeyboardButton(text="Aᴅᴍɪɴ", callback_data="niskala_admin"),
+                    InlineKeyboardButton(text="Nᴏᴛᴇꜱ", callback_data="niskala_notes"),
                  ],
                  [
-                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", callback_data="yurikorobot_support"),
-                    InlineKeyboardButton(text="Cʀᴇᴅɪᴛ", callback_data="yurikorobot_credit"),
+                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", callback_data="niskala_support"),
+                    InlineKeyboardButton(text="Cʀᴇᴅɪᴛ", callback_data="niskala_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="Back", callback_data="yurikorobot_back"),
+                    InlineKeyboardButton(text="Back", callback_data="niskala_back"),
                  
                  ]
                 ]
             ),
         )
-    elif query.data == "yurikorobot_admin":
+    elif query.data == "niskala_admin":
         query.message.edit_text(
             text=f"*Mari Jadikan Grup Anda Sedikit Efektif Sekarang*"
             
@@ -440,11 +440,11 @@ def yurikorobot_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="yurikorobot_basichelp")]]
+                [[InlineKeyboardButton(text="Back", callback_data="niskala_about")]]
             ),
         )
 
-    elif query.data == "yurikorobot_notes":
+    elif query.data == "niskala_notes":
         query.message.edit_text(
             text=f"<b> Menyiapkan Catatan</b>"
             
@@ -453,27 +453,10 @@ def yurikorobot_about_callback(update, context):
             f"\n\n✗ `Anda Juga Dapat Mengatur Tombol Untuk Catatan Dan Filter (Lihat Menu Bantuan)`",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="yurikorobot_basichelp")]]
+                [[InlineKeyboardButton(text="Back", callback_data="niskala_about")]]
             ),
         )
-    elif query.data == "yurikorobot_admin":
-        query.message.edit_text(
-            text=f"*Let's Make Your Group Bit Effective Now*"
-            
-            f"\n✗ `Congragulations, Niskala now ready to manage your group.`"
-            f"\n\n*Admin Tools*"
-            f"\n✗ `Basic Admin tools help you to protect and powerup your group.`"
-            f"\n✗ `You can ban members, Kick members, Promote someone as admin through commands of bot.`"
-            f"\n\n*Welcome*"
-            f"\n✗ `Lets set a welcome message to welcome new users coming to your group.`"
-            f"\n✗ `send` `/setwelcome [message]` `to set a welcome message!`",
-            parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="yurikorobot_basichelp")]]
-            ),
-        )    
-    elif query.data == "yurikorobot_support":
+    elif query.data == "niskala_support":
         query.message.edit_text(
             text="* Obrolan Dukungan Niskala*"
             
@@ -482,21 +465,21 @@ def yurikorobot_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/DurovKontol"),
+                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/NiskalaSupport"),
                     InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url="https://t.me/QwertYou_LoveMe"),
                  ],
                  [
-                    InlineKeyboardButton(text="Back", callback_data="yurikorobot_basichelp"),
+                    InlineKeyboardButton(text="Back", callback_data="niskala_about"),
                  
                  ]
                 ]
             ),
         )
-    elif query.data == "yurikorobot_credit":
+    elif query.data == "niskala_credit":
         query.message.edit_text(
             text=f"<b> CREDIT UNTUK Niskala DEV'S</b>\n"
             
-            f"\nBerikut Beberapa Developers Yang Membantu Pembuatan ᴀʟ ✗ ʙᴏᴛ",
+            f"\nBerikut Beberapa Developers Yang Membantu Pembuatan Niskala",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -505,7 +488,7 @@ def yurikorobot_about_callback(update, context):
                     InlineKeyboardButton(text="Sʜᴜʙʜᴀɴꜱʜᴜ", url="t.me/Shubhanshutya"),
                  ],
                  [
-                    InlineKeyboardButton(text="Back", callback_data="yurikorobot_basichelp"),
+                    InlineKeyboardButton(text="Back", callback_data="niskala_about"),
                  
                  ]
                 ]
@@ -513,33 +496,6 @@ def yurikorobot_about_callback(update, context):
         )
         
         
-
-def Source_about_callback(update, context):
-    query = update.callback_query
-    if query.data == "source_":
-        query.message.edit_text(
-            text=""" Hi Bro I'm *AL*
-                 \nHere is the [🔥Source Code🔥](https://Xnxx.com) .""",
-            parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                    InlineKeyboardButton(text="Go Back", callback_data="source_back")
-                 ]
-                ]
-            ),
-        )
-    elif query.data == "source_back":
-        query.message.edit_text(
-                PM_START_TEXT,
-                reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.MARKDOWN,
-                timeout=60,
-                disable_web_page_preview=False,
-        )
-
-
 def get_help(update: Update, context: CallbackContext):
     chat = update.effective_chat  # type: Optional[Chat]
     args = update.effective_message.text.split(None, 1)
@@ -837,7 +793,7 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
-    about_callback_handler = CallbackQueryHandler(yurikorobot_about_callback, pattern=r"yurikorobot_")
+    about_callback_handler = CallbackQueryHandler(niskala_about_callback, pattern=r"niskala_")
     source_callback_handler = CallbackQueryHandler(Source_about_callback, pattern=r"source_")
 
     donate_handler = CommandHandler("donate", donate)

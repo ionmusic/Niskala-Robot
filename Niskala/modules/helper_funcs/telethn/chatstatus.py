@@ -1,5 +1,5 @@
-from Yuriko.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
-from Yuriko import DRAGONS
+from Niskala.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
+from Niskala import DRAGONS
 from telethon.tl.types import ChannelParticipantsAdmins
 
 
@@ -45,7 +45,7 @@ async def is_user_admin(user_id: int, chat_id):
     return status
 
 
-async def saitama_is_admin(chat_id: int):
+async def niskala_is_admin(chat_id: int):
     status = False
     saitama = await telethn.get_me()
     async for user in telethn.iter_participants(

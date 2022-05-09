@@ -6,8 +6,8 @@ from telegram.ext import CallbackContext
 from telegram.inline.inlinekeyboardbutton import InlineKeyboardButton
 from telegram.inline.inlinekeyboardmarkup import InlineKeyboardMarkup
 
-from Yuriko import DEV_USERS, dispatcher
-from .decorators import emikocallback
+from Niskala import DEV_USERS, dispatcher
+from Niskala.decorators import niskalacallback
 
 
 class AdminPerms(Enum):

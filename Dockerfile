@@ -64,12 +64,12 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-# Copy Python Requirements to /root/Yuriko 
-RUN git clone -b shiken https://github.com/Rzydx/Yuriko /root/Yuriko
-WORKDIR /root/Yuriko
+# Copy Python Requirements to /root/Niskala
+RUN git clone -b shiken https://github.com/Rzydx/Niskala-Robot /root/Niskala
+WORKDIR /root/Niskala
 
 #Copy config file to /root/Yuriko/Yuriko
-COPY ./Yuriko/sample_config.py ./Yuriko/config.py* /root/Yuriko/Yuriko/
+COPY ./Niskala/sample_config.py ./Niskala/config.py* /root/Niskala/Niskala/
 
 ENV PATH="/home/bot/bin:$PATH"
 
@@ -77,4 +77,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","Yuriko"]
+CMD ["python3","-m","Niskala"]

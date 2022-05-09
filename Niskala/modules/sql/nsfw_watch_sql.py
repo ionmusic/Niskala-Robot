@@ -13,7 +13,7 @@
 
 from sqlalchemy import Column, String
 
-from Yuriko.modules.sql import BASE, SESSION
+from Niskala.modules.sql import BASE, SESSION
 
 
 class Nsfwatch(BASE):

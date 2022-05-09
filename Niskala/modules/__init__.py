@@ -1,4 +1,4 @@
-from Yuriko import LOAD, NO_LOAD, LOGGER
+from Niskala import LOAD, NO_LOAD, LOGGER
 import sys
 
 

@@ -1,5 +1,5 @@
 from sqlalchemy import Column, String, Numeric, Boolean
-from Yuriko.modules.sql import BASE, SESSION
+from Niskala.modules.sql import BASE, SESSION
 
 
 class forceSubscribe(BASE):

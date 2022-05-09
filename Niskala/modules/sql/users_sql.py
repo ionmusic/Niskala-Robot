@@ -1,7 +1,7 @@
 import threading
 
-from Yuriko import dispatcher
-from Yuriko.modules.sql import BASE, SESSION
+from Niskala import dispatcher
+from Niskala.modules.sql import BASE, SESSION
 from sqlalchemy import (
     Column,
     ForeignKey,
