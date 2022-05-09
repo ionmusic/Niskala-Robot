@@ -22,22 +22,22 @@ from pyrogram.types import (CallbackQuery,
                             InputTextMessageContent)
 from search_engine_parser import GoogleSearch
 
-from Yuriko import (
+from Niskala import (
     DEV_USERS,
     EVENT_LOGS, 
     BOT_USERNAME,
     ubot2,
 )
-from Yuriko import pbot as app 
-from Yuriko import arq
-from Yuriko.services.keyboard import Ikb
-from Yuriko.utils.pluginhelper import convert_seconds_to_minutes as time_convert, fetch
-from Yuriko.services.tasks import _get_tasks_text, all_tasks, rm_task
-from Yuriko.services.types import InlineQueryResultCachedDocument
-from Yuriko.modules.info import get_chat_info, get_user_info
-from Yuriko.modules.music import download_youtube_audio
-from Yuriko.utils.functions import test_speedtest
-from Yuriko.utils.pastebin import paste
+from Niskala import pbot as app 
+from Niskala import arq
+from Niskala.services.keyboard import Ikb
+from Niskala.utils.pluginhelper import convert_seconds_to_minutes as time_convert, fetch
+from Niskala.services.tasks import _get_tasks_text, all_tasks, rm_task
+from Niskala.services.types import InlineQueryResultCachedDocument
+from Niskala.modules.info import get_chat_info, get_user_info
+from Niskala.modules.music import download_youtube_audio
+from Niskala.utils.functions import test_speedtest
+from Niskala.utils.pastebin import paste
 
 MESSAGE_DUMP_CHAT = EVENT_LOGS
 
@@ -115,14 +115,14 @@ async def alive_function(answers):
     bot_state = "Dead" if not await app.get_me() else "Alive"
     ubot_state = "Dead" if not await ubot2.get_me() else "Alive"
     buttons.add(
-        InlineKeyboardButton("Main bot", url="https://t.me/ALMusicXBot"),
+        InlineKeyboardButton("Main bot", url="https://t.me/niskalaxrobot"),
         InlineKeyboardButton(
             "Go Inline!", switch_inline_query_current_chat=""
         ),
     )
 
     msg = f"""
-**[AL Robot](https://t.me/QwertYou_LoveMe):**
+**[Niskala](https://t.me/QwertYou_LoveMe):**
 **MainBot:** `{bot_state}`
 **UserBot:** `{ubot_state}`
 **Python:** `{pyver.split()[0]}`

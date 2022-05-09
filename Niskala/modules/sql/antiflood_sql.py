@@ -3,7 +3,7 @@ import threading
 from sqlalchemy import String, Column, Integer, UnicodeText
 from sqlalchemy.sql.sqltypes import BigInteger
 
-from Yuriko.modules.sql import SESSION, BASE
+from Niskala.modules.sql import SESSION, BASE
 
 DEF_COUNT = 1
 DEF_LIMIT = 0

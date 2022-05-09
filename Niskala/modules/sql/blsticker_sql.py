@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, distinct, func, Integer
 
-from Yuriko.modules.sql import BASE, SESSION
+from Niskala.modules.sql import BASE, SESSION
 
 
 class StickersFilters(BASE):

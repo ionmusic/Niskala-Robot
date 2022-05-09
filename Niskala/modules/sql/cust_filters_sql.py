@@ -2,8 +2,8 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, Boolean, distinct, func, Integer
 
-from Yuriko.modules.helper_funcs.msg_types import Types
-from Yuriko.modules.sql import BASE, SESSION
+from Niskala.modules.helper_funcs.msg_types import Types
+from Niskala.modules.sql import BASE, SESSION
 
 
 class CustomFilters(BASE):

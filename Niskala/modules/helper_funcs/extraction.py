@@ -1,7 +1,7 @@
 from typing import List, Optional
 
-from Yuriko import LOGGER
-from Yuriko.modules.users import get_user_id
+from Niskala import LOGGER
+from Niskala.modules.users import get_user_id
 from telegram import Message, MessageEntity
 from telegram.error import BadRequest
 

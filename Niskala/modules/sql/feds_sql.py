@@ -1,8 +1,8 @@
 import ast
 import threading
 
-from Yuriko import dispatcher
-from Yuriko.modules.sql import BASE, SESSION
+from Niskala import dispatcher
+from Niskala.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, String, UnicodeText
 from telegram.error import BadRequest, Unauthorized
 from sqlalchemy.sql.sqltypes import BigInteger

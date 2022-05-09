@@ -1,1 +1,1 @@
-worker: python3 -m Yuriko
+worker: python3 -m Niskala

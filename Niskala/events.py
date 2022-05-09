@@ -7,12 +7,12 @@ from pathlib import Path
 from telethon import events
 
 from pymongo import MongoClient
-from Yuriko import MONGO_DB_URI
-from Yuriko import telethn
+from Niskala import MONGO_DB_URI
+from Niskala import telethn
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
-db = client["emiexrobot"]
+db = client["niskalaxrobot"]
 gbanned = db.gban
 
 def register(**args):
@@ -145,7 +145,7 @@ def bot(**args):
     return decorator
 
 
-def Yuriko(**args):
+def Niskala(**args):
     pattern = args.get("pattern", None)
     disable_edited = args.get("disable_edited", False)
     ignore_unsafe = args.get("ignore_unsafe", False)

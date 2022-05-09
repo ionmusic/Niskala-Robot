@@ -1,6 +1,6 @@
 import threading
 from sqlalchemy.sql.sqltypes import BigInteger
-from Yuriko.modules.sql import BASE, SESSION
+from Niskala.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, String, UnicodeText
 
 

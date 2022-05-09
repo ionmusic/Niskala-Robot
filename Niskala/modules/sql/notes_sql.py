@@ -1,8 +1,8 @@
 # Note: chat_id's are stored as strings because the int is too large to be stored in a PSQL database.
 import threading
 
-from Yuriko.modules.helper_funcs.msg_types import Types
-from Yuriko.modules.sql import BASE, SESSION
+from Niskala.modules.helper_funcs.msg_types import Types
+from Niskala.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, String, UnicodeText, distinct, func
 from sqlalchemy.sql.sqltypes import BigInteger
 

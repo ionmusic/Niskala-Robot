@@ -1,6 +1,6 @@
 import threading
 
-from Yuriko.modules.sql import BASE, SESSION
+from Niskala.modules.sql import BASE, SESSION
 from sqlalchemy import Column, String, UnicodeText
 
 

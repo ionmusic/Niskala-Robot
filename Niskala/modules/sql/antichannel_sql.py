@@ -3,7 +3,7 @@ import threading
 from sqlalchemy import Boolean, Column
 from sqlalchemy.sql.sqltypes import String
 
-from Yuriko.modules.sql import BASE, SESSION
+from Niskala.modules.sql import BASE, SESSION
 
 
 class AntiChannelSettings(BASE):
