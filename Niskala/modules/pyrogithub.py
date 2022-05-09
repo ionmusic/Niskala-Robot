@@ -1,7 +1,7 @@
 import aiohttp
 from pyrogram import filters
-from Yuriko import pbot, BOT_USERNAME
-from Yuriko.utils.errors import capture_err
+from Niskala import pbot, BOT_USERNAME
+from Niskala.utils.errors import capture_err
 
 
 __mod_name__ = "Github"

@@ -8,20 +8,20 @@ from telegram.utils.helpers import mention_html
 
 from alphabet_detector import AlphabetDetector
 
-import Yuriko.modules.sql.locks_sql as sql
-from Yuriko import dispatcher, DRAGONS, LOGGER
-from Yuriko.modules.disable import DisableAbleCommandHandler
-from Yuriko.modules.helper_funcs.chat_status import (
+import Niskala.modules.sql.locks_sql as sql
+from Niskala import dispatcher, DRAGONS, LOGGER
+from Niskala.modules.disable import DisableAbleCommandHandler
+from Niskala.modules.helper_funcs.chat_status import (
     can_delete,
     is_user_admin,
     user_not_admin,
     is_bot_admin,
     user_admin,
 )
-from Yuriko.modules.log_channel import loggable
-from Yuriko.modules.connection import connected
-from Yuriko.modules.sql.approve_sql import is_approved
-from Yuriko.modules.helper_funcs.alternate import send_message, typing_action
+from Niskala.modules.log_channel import loggable
+from Niskala.modules.connection import connected
+from Niskala.modules.sql.approve_sql import is_approved
+from Niskala.modules.helper_funcs.alternate import send_message, typing_action
 
 ad = AlphabetDetector()
 

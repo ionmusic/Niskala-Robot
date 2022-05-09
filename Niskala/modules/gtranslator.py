@@ -9,9 +9,9 @@ from telegram import (
     InlineKeyboardMarkup,
     InlineKeyboardButton,
 )
-from Yuriko import dispatcher, pbot
+from Niskala import dispatcher, pbot
 from pyrogram import filters
-from Yuriko.modules.disable import DisableAbleCommandHandler
+from Niskala.modules.disable import DisableAbleCommandHandler
 
 
 __help__ = """ 

@@ -14,8 +14,8 @@ from tswift import Song
 from yt_dlp import YoutubeDL
 from youtube_search import YoutubeSearch
 from youtubesearchpython import SearchVideos
-from Yuriko.utils.pluginhelper import get_text, progress
-from Yuriko import pbot, arq
+from Niskala.utils.pluginhelper import get_text, progress
+from Niskala import pbot, arq
 
 async def lyrics_func(answers, text):
     song = await arq.lyrics(text)

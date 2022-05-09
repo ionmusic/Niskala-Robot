@@ -25,9 +25,9 @@ import requests
 from telethon import types
 from telethon.tl import functions
 
-from Yuriko import REM_BG_API_KEY
-from Yuriko.events import register
-from Yuriko import telethn as tbot
+from Niskala import REM_BG_API_KEY
+from Niskala.events import register
+from Niskala import telethn as tbot
 
 REM_BG_API_KEY = "REM_BG_API_KEY"
 TEMP_DOWNLOAD_DIRECTORY = "./"
@@ -94,7 +94,7 @@ async def _(event):
         await event.reply("Background Removed in {} seconds".format(ms))
     else:
         await event.reply(
-            "remove.bg API returned Errors. Please report to @kenbotsupport\n`{}".format(
+            "remove.bg API returned Errors. Please report to @NiskalaSupport\n`{}".format(
                 output_file_name.content.decode("UTF-8")
             )
         )

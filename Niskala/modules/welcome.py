@@ -4,8 +4,8 @@ import re
 import time
 from functools import partial
 from io import BytesIO
-import Yuriko.modules.sql.welcome_sql as sql
-from Yuriko import (
+import Niskala.modules.sql.welcome_sql as sql
+from Niskala import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -15,19 +15,19 @@ from Yuriko import (
     LOGGER,
     dispatcher,
 )
-from Yuriko.modules.helper_funcs.chat_status import (
+from Niskala.modules.helper_funcs.chat_status import (
     is_user_ban_protected,
     user_admin,
 )
-from Yuriko.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from Yuriko.modules.helper_funcs.msg_types import get_welcome_type
-from Yuriko.modules.helper_funcs.handlers import MessageHandlerChecker
-from Yuriko.modules.helper_funcs.string_handling import (
+from Niskala.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from Niskala.modules.helper_funcs.msg_types import get_welcome_type
+from Niskala.modules.helper_funcs.handlers import MessageHandlerChecker
+from Niskala.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
     markdown_parser,
 )
-from Yuriko.modules.log_channel import loggable
-from Yuriko.modules.sql.global_bans_sql import is_user_gbanned
+from Niskala.modules.log_channel import loggable
+from Niskala.modules.sql.global_bans_sql import is_user_gbanned
 from telegram import (
     ChatPermissions,
     InlineKeyboardButton,

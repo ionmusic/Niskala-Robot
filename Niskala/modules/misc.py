@@ -4,9 +4,9 @@ import re
 import codecs
 from typing import List
 from random import randint
-from Yuriko.modules.helper_funcs.chat_status import user_admin
-from Yuriko.modules.disable import DisableAbleCommandHandler
-from Yuriko import (
+from Niskala.modules.helper_funcs.chat_status import user_admin
+from Niskala.modules.disable import DisableAbleCommandHandler
+from Niskala import (
     dispatcher,
     WALL_API,
 )
@@ -27,9 +27,9 @@ from telegram import (
 from telegram.error import BadRequest
 from telegram.ext.dispatcher import run_async
 from telegram.ext import CallbackContext, Filters, CommandHandler
-from Yuriko import StartTime
-from Yuriko.modules.helper_funcs.chat_status import sudo_plus
-from Yuriko.modules.helper_funcs.alternate import send_action, typing_action
+from Niskala import StartTime
+from Niskala.modules.helper_funcs.chat_status import sudo_plus
+from Niskala.modules.helper_funcs.alternate import send_action, typing_action
 
 MARKDOWN_HELP = f"""
 Markdown is a very powerful formatting tool supported by telegram. {dispatcher.bot.first_name} has some enhancements, to make sure that \

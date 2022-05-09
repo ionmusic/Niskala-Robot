@@ -5,9 +5,9 @@ import requests
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
-from Yuriko import StartTime, dispatcher
-from Yuriko.modules.helper_funcs.chat_status import sudo_plus
-from Yuriko.modules.disable import DisableAbleCommandHandler
+from Niskala import StartTime, dispatcher
+from Niskala.modules.helper_funcs.chat_status import sudo_plus
+from Niskala.modules.disable import DisableAbleCommandHandler
 
 sites_list = {
     "Telegram": "https://api.telegram.org",

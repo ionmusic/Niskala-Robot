@@ -93,7 +93,7 @@ buttons = [
         InlineKeyboardButton(text="ᴀʙᴏᴜᴛ ɴɪsᴋᴀʟᴀ", callback_data="niskala_about"),
     ],
     [
-        InlineKeyboardButton(text="ɢᴇᴛ ʜᴇʟᴘ", callback_data="help_back"),
+        InlineKeyboardButton(text="ɢᴇᴛ ʜᴇʟᴘ", callback_data="niskala_"),
         InlineKeyboardButton(
             text="ᴛʀʏ ɪɴʟɪɴᴇ​​", switch_inline_query_current_chat=""
         ),
@@ -374,13 +374,13 @@ def niskala_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Bᴜɢ'ꜱ", url="https://t.me/godzilla_chatting"
+                            text="Manage", callback_data="help_back"
                         ),
                         InlineKeyboardButton(
-                            text="Bᴏᴛ Lɪꜱᴛ", url="https://t.me/BotDuniyaXD/23"
+                            text="Music", url="https://t.me/BotDuniyaXD/23"
                         ),
                     ],
-                    [InlineKeyboardButton(text="Back", callback_data="yurikorobot_back")],
+                    [InlineKeyboardButton(text="Back", callback_data="niskala_back")],
                 ]
             ),
         )

@@ -26,9 +26,9 @@ from PIL import Image
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Yuriko import pbot as app
-from Yuriko.utils.errors import capture_err
-from Yuriko.services.sections import section
+from Niskala import pbot as app
+from Niskala.utils.errors import capture_err
+from Niskala.services.sections import section
 
 
 async def convert(

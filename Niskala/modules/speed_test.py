@@ -1,7 +1,7 @@
 import speedtest
-from Yuriko import DEV_USERS, dispatcher
-from Yuriko.modules.disable import DisableAbleCommandHandler
-from Yuriko.modules.helper_funcs.chat_status import dev_plus
+from Niskala import DEV_USERS, dispatcher
+from Niskala.modules.disable import DisableAbleCommandHandler
+from Niskala.modules.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.ext import CallbackContext, CallbackQueryHandler
 

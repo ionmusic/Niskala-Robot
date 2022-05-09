@@ -104,7 +104,7 @@ def paginate_modules(page_n: int, module_dict: Dict, prefix, chat=None) -> List:
                 ),
                 EqInlineKeyboardButton(
                     "• Bᴀᴄᴋ •",
-                    callback_data="niskala_back",
+                    callback_data="niskala_",
                 ),
                 EqInlineKeyboardButton(
                     "❯",

@@ -7,9 +7,9 @@ import traceback
 import aiohttp
 from telethon import events
 
-from Yuriko import telethn as bot
-from Yuriko.modules.urluploader import download_file
-from Yuriko.utils.uputils import humanbytes, progress
+from Niskala import telethn as bot
+from Niskala.modules.urluploader import download_file
+from Niskala.utils.uputils import humanbytes, progress
 
 DOWNLOADPATH = "Downloads/"
 

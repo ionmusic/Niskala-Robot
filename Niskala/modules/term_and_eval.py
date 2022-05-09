@@ -5,7 +5,7 @@ import re
 import html
 import subprocess
 from io import StringIO, BytesIO
-from Yuriko import pbot, OWNER_ID
+from Niskala import pbot, OWNER_ID
 from pyrogram import filters
 
 

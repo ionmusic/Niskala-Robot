@@ -19,8 +19,8 @@ SOFTWARE.
 """
 from pyrogram import filters
 
-from Yuriko import pbot as app, arq
-from Yuriko.utils.errors import capture_err
+from Niskala import pbot as app, arq
+from Niskala.utils.errors import capture_err
 
 __mod_name__ = "Reddit"
 

@@ -1,6 +1,6 @@
 import requests
-from Yuriko.events import register
-from Yuriko import telethn as tbot
+from Niskala.events import register
+from Niskala import telethn as tbot
 
 
 @register(pattern="^/ptl ?(.*)")

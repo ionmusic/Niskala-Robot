@@ -1,5 +1,5 @@
 import os
-from Yuriko.modules.sql.night_mode_sql import (
+from Niskala.modules.sql.night_mode_sql import (
     add_nightmode,
     rmnightmode,
     get_all_chat_id,
@@ -8,8 +8,8 @@ from Yuriko.modules.sql.night_mode_sql import (
 from telethon.tl.types import ChatBannedRights
 from apscheduler.schedulers.asyncio import AsyncIOScheduler 
 from telethon import functions
-from Yuriko.events import register
-from Yuriko import telethn as tbot, OWNER_ID
+from Niskala.events import register
+from Niskala import telethn as tbot, OWNER_ID
 from telethon import Button, custom, events
 
 hehes = ChatBannedRights(

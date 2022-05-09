@@ -3,9 +3,9 @@ import os
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Yuriko import DEV_USERS
-from Yuriko import pbot as app
-from Yuriko.services.sections import section
+from Niskala import DEV_USERS
+from Niskala import pbot as app
+from Niskala.services.sections import section
 
 
 async def get_user_info(user, already=False):

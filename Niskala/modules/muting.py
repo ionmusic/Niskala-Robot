@@ -2,8 +2,8 @@ import html
 import re
 from typing import Optional
 
-from Yuriko import LOGGER, TIGERS, dispatcher
-from Yuriko.modules.helper_funcs.chat_status import (
+from Niskala import LOGGER, TIGERS, dispatcher
+from Niskala.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     connection_status,
@@ -11,12 +11,12 @@ from Yuriko.modules.helper_funcs.chat_status import (
     user_admin,
     user_admin_no_reply,
 )
-from Yuriko.modules.helper_funcs.extraction import (
+from Niskala.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from Yuriko.modules.helper_funcs.string_handling import extract_time
-from Yuriko.modules.log_channel import loggable
+from Niskala.modules.helper_funcs.string_handling import extract_time
+from Niskala.modules.log_channel import loggable
 from telegram import (
     Bot, 
     Chat, 

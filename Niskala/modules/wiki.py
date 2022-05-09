@@ -1,6 +1,6 @@
 import wikipedia
-from Yuriko import dispatcher
-from Yuriko.modules.disable import DisableAbleCommandHandler
+from Niskala import dispatcher
+from Niskala.modules.disable import DisableAbleCommandHandler
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 from wikipedia.exceptions import DisambiguationError, PageError

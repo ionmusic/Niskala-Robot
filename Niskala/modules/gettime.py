@@ -2,8 +2,8 @@ import datetime
 from typing import List
 
 import requests
-from Yuriko import TIME_API_KEY, dispatcher
-from Yuriko.modules.disable import DisableAbleCommandHandler
+from Niskala import TIME_API_KEY, dispatcher
+from Niskala.modules.disable import DisableAbleCommandHandler
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext
 

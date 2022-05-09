@@ -1,8 +1,8 @@
 from random import randint
 
 import requests as r
-from Yuriko import SUPPORT_CHAT, WALL_API, dispatcher
-from Yuriko.modules.disable import DisableAbleCommandHandler
+from Niskala import SUPPORT_CHAT, WALL_API, dispatcher
+from Niskala.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext
 

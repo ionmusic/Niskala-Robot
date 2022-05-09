@@ -7,10 +7,10 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from Yuriko import *
+from Niskala import *
 
-from Yuriko import telethn as tbot
-from Yuriko.events import register
+from Niskala import telethn as tbot
+from Niskala.events import register
 
 
 @register(pattern="^/tts (.*)")

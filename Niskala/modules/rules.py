@@ -1,9 +1,9 @@
 from typing import Optional
 
-import Yuriko.modules.sql.rules_sql as sql
-from Yuriko import dispatcher
-from Yuriko.modules.helper_funcs.chat_status import user_admin
-from Yuriko.modules.helper_funcs.string_handling import markdown_parser
+import Niskala.modules.sql.rules_sql as sql
+from Niskala import dispatcher
+from Niskala.modules.helper_funcs.chat_status import user_admin
+from Niskala.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,

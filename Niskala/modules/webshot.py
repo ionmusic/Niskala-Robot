@@ -20,8 +20,8 @@ SOFTWARE.
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Yuriko import pbot as app
-from Yuriko.utils.errors import capture_err
+from Niskala import pbot as app
+from Niskala.utils.errors import capture_err
 
 __mod_name__ = "Webshot​"
 

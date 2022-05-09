@@ -1,6 +1,6 @@
-from Yuriko  import dispatcher
-from Yuriko.modules.disable import DisableAbleCommandHandler
-from Yuriko.modules.helper_funcs.alternate import typing_action
+from Niskala import dispatcher
+from Niskala.modules.disable import DisableAbleCommandHandler
+from Niskala.modules.helper_funcs.alternate import typing_action
 from telegram import ParseMode
 from telegram.ext import run_async
 

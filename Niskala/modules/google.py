@@ -20,10 +20,10 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from Yuriko import *
+from Niskala import *
 
-from Yuriko.events import register
-from Yuriko import telethn as tbot
+from Niskala.events import register
+from Niskala import telethn as tbot
 
 opener = urllib.request.build_opener()
 useragent = "Mozilla/5.0 (Linux; Android 9; SM-G960F Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.157 Mobile Safari/537.36"

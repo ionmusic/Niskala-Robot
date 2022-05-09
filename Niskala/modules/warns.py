@@ -3,9 +3,9 @@ import re
 from typing import Optional
 
 import telegram
-from Yuriko import TIGERS, WOLVES, dispatcher
-from Yuriko.modules.disable import DisableAbleCommandHandler
-from Yuriko.modules.helper_funcs.chat_status import (
+from Niskala import TIGERS, WOLVES, dispatcher
+from Niskala.modules.disable import DisableAbleCommandHandler
+from Niskala.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     is_user_admin,
@@ -14,16 +14,16 @@ from Yuriko.modules.helper_funcs.chat_status import (
     user_admin_no_reply,
     can_delete,
 )
-from Yuriko.modules.helper_funcs.extraction import (
+from Niskala.modules.helper_funcs.extraction import (
     extract_text,
     extract_user,
     extract_user_and_text,
 )
-from Yuriko.modules.helper_funcs.filters import CustomFilters
-from Yuriko.modules.helper_funcs.misc import split_message
-from Yuriko.modules.helper_funcs.string_handling import split_quotes
-from Yuriko.modules.log_channel import loggable
-from Yuriko.modules.sql import warns_sql as sql
+from Niskala.modules.helper_funcs.filters import CustomFilters
+from Niskala.modules.helper_funcs.misc import split_message
+from Niskala.modules.helper_funcs.string_handling import split_quotes
+from Niskala.modules.log_channel import loggable
+from Niskala.modules.sql import warns_sql as sql
 from telegram import (
     CallbackQuery,
     Chat,
@@ -45,7 +45,7 @@ from telegram.ext import (
     run_async,
 )
 from telegram.utils.helpers import mention_html
-from Yuriko.modules.sql.approve_sql import is_approved
+from Niskala.modules.sql.approve_sql import is_approved
 
 WARN_HANDLER_GROUP = 9
 CURRENT_WARNING_FILTER_STRING = "<b>Current warning filters in this chat:</b>\n"
