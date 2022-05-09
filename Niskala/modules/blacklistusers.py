@@ -1,6 +1,6 @@
 # Module to blacklist users and prevent them from using commands by @TheRealPhoenix
 import html
-import Yuriko.modules.sql.blacklistusers_sql as sql
+import Niskala.modules.sql.blacklistusers_sql as sql
 from Yuriko import (
     DEV_USERS,
     OWNER_ID,
@@ -10,12 +10,12 @@ from Yuriko import (
     WOLVES,
     dispatcher,
 ) 
-from Yuriko.modules.helper_funcs.chat_status import dev_plus
-from Yuriko.modules.helper_funcs.extraction import (
+from Niskala.modules.helper_funcs.chat_status import dev_plus
+from Niskala.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from Yuriko.modules.log_channel import gloggable
+from Niskala.modules.log_channel import gloggable
 from telegram import ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler

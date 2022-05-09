@@ -1,9 +1,9 @@
 from time import sleep
 
-import Yuriko.modules.sql.global_bans_sql as gban_sql
-import Yuriko.modules.sql.users_sql as user_sql
-from Yuriko import DEV_USERS, OWNER_ID, dispatcher
-from Yuriko.modules.helper_funcs.chat_status import dev_plus
+import Niskala.modules.sql.global_bans_sql as gban_sql
+import Niskala.modules.sql.users_sql as user_sql
+from Niskala import DEV_USERS, OWNER_ID, dispatcher
+from Niskala.modules.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (

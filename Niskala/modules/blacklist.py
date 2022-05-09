@@ -6,18 +6,18 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters
 from telegram.utils.helpers import mention_html
 
-import Yuriko.modules.sql.blacklist_sql as sql
-from Yuriko import dispatcher, LOGGER
-from Yuriko.modules.disable import DisableAbleCommandHandler
-from Yuriko.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from Yuriko.modules.helper_funcs.extraction import extract_text
-from Yuriko.modules.helper_funcs.misc import split_message
-from Yuriko.modules.log_channel import loggable
-from Yuriko.modules.warns import warn
-from Yuriko.modules.helper_funcs.string_handling import extract_time
-from Yuriko.modules.connection import connected
-from Yuriko.modules.sql.approve_sql import is_approved
-from Yuriko.modules.helper_funcs.alternate import send_message, typing_action
+import Niskala.modules.sql.blacklist_sql as sql
+from Niskala import dispatcher, LOGGER
+from Niskala.modules.disable import DisableAbleCommandHandler
+from Niskala.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from Niskala.modules.helper_funcs.extraction import extract_text
+from Niskala.modules.helper_funcs.misc import split_message
+from Niskala.modules.log_channel import loggable
+from Niskala.modules.warns import warn
+from Niskala.modules.helper_funcs.string_handling import extract_time
+from Niskala.modules.connection import connected
+from Niskala.modules.sql.approve_sql import is_approved
+from Niskala.modules.helper_funcs.alternate import send_message, typing_action
 
 BLACKLIST_GROUP = 11
 

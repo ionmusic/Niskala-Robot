@@ -4,9 +4,9 @@ from pyrogram import __version__ as z
 from telethon import __version__ as s
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram import filters
-from Yuriko import pbot
-from Yuriko.utils.errors import capture_err
-from Yuriko.utils.functions import make_carbon
+from Niskala import pbot
+from Niskala.utils.errors import capture_err
+from Niskala.utils.functions import make_carbon
 
 
 @pbot.on_message(filters.command("carbon"))

@@ -1,17 +1,17 @@
 import html
 from typing import Optional
 
-import Yuriko.modules.sql.blsticker_sql as sql
-from Yuriko import LOGGER, dispatcher
-from Yuriko.modules.connection import connected
-from Yuriko.modules.disable import DisableAbleCommandHandler
-from Yuriko.modules.helper_funcs.alternate import send_message
-from Yuriko.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from Yuriko.modules.helper_funcs.misc import split_message
-from Yuriko.modules.helper_funcs.string_handling import extract_time
+import Niskala.modules.sql.blsticker_sql as sql
+from Niskala import LOGGER, dispatcher
+from Niskala.modules.connection import connected
+from Niskala.modules.disable import DisableAbleCommandHandler
+from Niskala.modules.helper_funcs.alternate import send_message
+from Niskala.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from Niskala.modules.helper_funcs.misc import split_message
+from Niskala.modules.helper_funcs.string_handling import extract_time
 
-from Yuriko.modules.log_channel import loggable
-from Yuriko.modules.warns import warn
+from Niskala.modules.log_channel import loggable
+from Niskala.modules.warns import warn
 from telegram import Chat, Message, ParseMode, Update, User, ChatPermissions
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandler

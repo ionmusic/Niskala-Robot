@@ -5,23 +5,23 @@ from telegram import ParseMode, Message
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler
 
-import Yuriko.modules.sql.notes_sql as sql
-from Yuriko import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
-from Yuriko.__main__ import DATA_IMPORT
-from Yuriko.modules.helper_funcs.chat_status import user_admin
-from Yuriko.modules.helper_funcs.alternate import typing_action
+import Niskala.modules.sql.notes_sql as sql
+from Niskala import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
+from Niskala.__main__ import DATA_IMPORT
+from Niskala.modules.helper_funcs.chat_status import user_admin
+from Niskala.modules.helper_funcs.alternate import typing_action
 
-# from Yuriko.modules.rules import get_rules
-import Yuriko.modules.sql.rules_sql as rulessql
+# from Niskala.modules.rules import get_rules
+import Niskala.modules.sql.rules_sql as rulessql
 
-# from Yuriko.modules.sql import warns_sql as warnssql
-import Yuriko.modules.sql.blacklist_sql as blacklistsql
-from Yuriko.modules.sql import disable_sql as disabledsql
+# from Niskala.modules.sql import warns_sql as warnssql
+import Niskala.modules.sql.blacklist_sql as blacklistsql
+from Niskala.modules.sql import disable_sql as disabledsql
 
-# from Yuriko.modules.sql import cust_filters_sql as filtersql
-# import Yuriko.modules.sql.welcome_sql as welcsql
-import Yuriko.modules.sql.locks_sql as locksql
-from Yuriko.modules.connection import connected
+# from Niskala.modules.sql import cust_filters_sql as filtersql
+# import Niskala.modules.sql.welcome_sql as welcsql
+import Niskala.modules.sql.locks_sql as locksql
+from Niskala.modules.connection import connected
 
 
 @user_admin

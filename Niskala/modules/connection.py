@@ -5,10 +5,10 @@ from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Upda
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import CommandHandler, CallbackQueryHandler
 
-import Yuriko.modules.sql.connection_sql as sql
-from Yuriko import dispatcher, DRAGONS, DEV_USERS
-from Yuriko.modules.helper_funcs import chat_status
-from Yuriko.modules.helper_funcs.alternate import send_message, typing_action
+import Niskala.modules.sql.connection_sql as sql
+from Niskala import dispatcher, DRAGONS, DEV_USERS
+from Niskala.modules.helper_funcs import chat_status
+from Niskala.modules.helper_funcs.alternate import send_message, typing_action
 
 user_admin = chat_status.user_admin
 

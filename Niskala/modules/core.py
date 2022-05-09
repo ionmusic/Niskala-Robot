@@ -1,15 +1,15 @@
-from Yuriko import telethn as tbot
-from Yuriko.events import register
+from Niskala import telethn as tbot
+from Niskala.events import register
 import os
 import asyncio
 import os
 import time
 from datetime import datetime
-from Yuriko import OWNER_ID, DEV_USERS
-from Yuriko import TEMP_DOWNLOAD_DIRECTORY as path
-from Yuriko import TEMP_DOWNLOAD_DIRECTORY
+from Niskala import OWNER_ID, DEV_USERS
+from Niskala import TEMP_DOWNLOAD_DIRECTORY as path
+from Niskala import TEMP_DOWNLOAD_DIRECTORY
 from datetime import datetime
-water = './Yuriko/resources/emiko.png'
+water = './Niskala/resources/emiko.png'
 client = tbot
 
 @register(pattern=r"^/send ?(.*)")

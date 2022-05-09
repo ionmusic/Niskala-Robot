@@ -1,14 +1,14 @@
 import html
 
-from Yuriko import ALLOW_EXCL, CustomCommandHandler, dispatcher
-from Yuriko.modules.disable import DisableAbleCommandHandler
-from Yuriko.modules.helper_funcs.chat_status import (
+from Niskala import ALLOW_EXCL, CustomCommandHandler, dispatcher
+from Niskala.modules.disable import DisableAbleCommandHandler
+from Niskala.modules.helper_funcs.chat_status import (
     bot_can_delete,
     connection_status,
     dev_plus,
     user_admin,
 )
-from Yuriko.modules.sql import cleaner_sql as sql
+from Niskala.modules.sql import cleaner_sql as sql
 from telegram import ParseMode, Update
 from telegram.ext import (
     CallbackContext,

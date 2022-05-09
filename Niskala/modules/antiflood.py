@@ -4,15 +4,15 @@ import re
 
 from telegram import Message, Chat, Update, User, ChatPermissions
 
-from Yuriko import TIGERS, WOLVES, dispatcher
-from Yuriko.modules.helper_funcs.chat_status import (
+from Niskala import TIGERS, WOLVES, dispatcher
+from Niskala.modules.helper_funcs.chat_status import (
     bot_admin,
     is_user_admin,
     user_admin,
     user_admin_no_reply,
 )
-from Yuriko.modules.log_channel import loggable
-from Yuriko.modules.sql import antiflood_sql as sql
+from Niskala.modules.log_channel import loggable
+from Niskala.modules.sql import antiflood_sql as sql
 from telegram.error import BadRequest
 from telegram.ext import (
     CallbackContext,
@@ -22,10 +22,10 @@ from telegram.ext import (
     MessageHandler,
 )
 from telegram.utils.helpers import mention_html
-from Yuriko.modules.helper_funcs.string_handling import extract_time
-from Yuriko.modules.connection import connected
-from Yuriko.modules.helper_funcs.alternate import send_message
-from Yuriko.modules.sql.approve_sql import is_approved
+from Niskala.modules.helper_funcs.string_handling import extract_time
+from Niskala.modules.connection import connected
+from Niskala.modules.helper_funcs.alternate import send_message
+from Niskala.modules.sql.approve_sql import is_approved
 
 FLOOD_GROUP = 3
 

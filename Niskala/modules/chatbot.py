@@ -3,7 +3,7 @@ import re
 import os
 import html
 import requests
-import Yuriko.modules.sql.chatbot_sql as sql
+import Niskala.modules.sql.chatbot_sql as sql
 
 from time import sleep
 from telegram import ParseMode
@@ -15,10 +15,10 @@ from telegram.ext import (CallbackContext, CallbackQueryHandler, CommandHandler,
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.utils.helpers import mention_html, mention_markdown, escape_markdown
 
-from Yuriko.modules.helper_funcs.filters import CustomFilters
-from Yuriko.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
-from Yuriko import dispatcher, updater, SUPPORT_CHAT
-from Yuriko.modules.log_channel import gloggable
+from Niskala.modules.helper_funcs.filters import CustomFilters
+from Niskala.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
+from Niskala import dispatcher, updater, SUPPORT_CHAT
+from Niskala.modules.log_channel import gloggable
 
 @run_async
 @user_admin_no_reply

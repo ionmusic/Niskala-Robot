@@ -13,23 +13,23 @@ from telegram.ext import (
     Filters,
 )
 from telegram.utils.helpers import mention_html, escape_markdown
-from Yuriko import dispatcher, LOGGER, DRAGONS
-from Yuriko.modules.disable import DisableAbleCommandHandler
-from Yuriko.modules.helper_funcs.handlers import MessageHandlerChecker
-from Yuriko.modules.helper_funcs.chat_status import user_admin
-from Yuriko.modules.helper_funcs.extraction import extract_text
-from Yuriko.modules.helper_funcs.filters import CustomFilters
-from Yuriko.modules.helper_funcs.misc import build_keyboard_parser
-from Yuriko.modules.helper_funcs.msg_types import get_filter_type
-from Yuriko.modules.helper_funcs.string_handling import (
+from Niskala import dispatcher, LOGGER, DRAGONS
+from Niskala.modules.disable import DisableAbleCommandHandler
+from Niskala.modules.helper_funcs.handlers import MessageHandlerChecker
+from Niskala.modules.helper_funcs.chat_status import user_admin
+from Niskala.modules.helper_funcs.extraction import extract_text
+from Niskala.modules.helper_funcs.filters import CustomFilters
+from Niskala.modules.helper_funcs.misc import build_keyboard_parser
+from Niskala.modules.helper_funcs.msg_types import get_filter_type
+from Niskala.modules.helper_funcs.string_handling import (
     split_quotes,
     button_markdown_parser,
     escape_invalid_curly_brackets,
     markdown_to_html,
 )
-from Yuriko.modules.sql import cust_filters_sql as sql
-from Yuriko.modules.connection import connected
-from Yuriko.modules.helper_funcs.alternate import send_message, typing_action
+from Niskala.modules.sql import cust_filters_sql as sql
+from Niskala.modules.connection import connected
+from Niskala.modules.helper_funcs.alternate import send_message, typing_action
 
 HANDLER_GROUP = 10
 

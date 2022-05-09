@@ -4,16 +4,16 @@ from telegram import Update
 from telegram.ext import CallbackContext
 from telegram.ext.filters import Filters
 
-from Yuriko.modules.helper_funcs.anonymous import AdminPerms, user_admin
-from Yuriko.modules.helper_funcs.decorators import emikocmd, emikomsg
-from Yuriko.modules.sql.antichannel_sql import (
+from Niskala.modules.helper_funcs.anonymous import AdminPerms, user_admin
+from Niskala.modules.helper_funcs.decorators import niskalacmd, niskalamsg
+from Niskala.modules.sql.antichannel_sql import (
     antichannel_status,
     disable_antichannel,
     enable_antichannel,
 )
 
 
-@emikocmd(command="antichannel", group=100)
+@niskalacmd(command="antichannel", group=100)
 @user_admin(AdminPerms.CAN_RESTRICT_MEMBERS)
 def set_antichannel(update: Update, context: CallbackContext):
     message = update.effective_message
@@ -41,7 +41,7 @@ def set_antichannel(update: Update, context: CallbackContext):
     )
 
 
-@emikomsg(Filters.chat_type.groups, group=110)
+@niskalamsg(Filters.chat_type.groups, group=110)
 def eliminate_channel(update: Update, context: CallbackContext):
     message = update.effective_message
     chat = update.effective_chat

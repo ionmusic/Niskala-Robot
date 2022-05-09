@@ -1,11 +1,11 @@
 import html
-from Yuriko.modules.disable import DisableAbleCommandHandler
-from Yuriko import dispatcher, DRAGONS
-from Yuriko.modules.helper_funcs.extraction import extract_user
+from Niskala.modules.disable import DisableAbleCommandHandler
+from Niskala import dispatcher, DRAGONS
+from Niskala.modules.helper_funcs.extraction import extract_user
 from telegram.ext import CallbackContext, CallbackQueryHandler
-import Yuriko.modules.sql.approve_sql as sql
-from Yuriko.modules.helper_funcs.chat_status import user_admin
-from Yuriko.modules.log_channel import loggable
+import Niskala.modules.sql.approve_sql as sql
+from Niskala.modules.helper_funcs.chat_status import user_admin
+from Niskala.modules.log_channel import loggable
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Update
 from telegram.utils.helpers import mention_html
 from telegram.error import BadRequest
