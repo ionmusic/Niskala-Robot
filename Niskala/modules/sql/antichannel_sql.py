@@ -62,4 +62,4 @@ def migrate_chat(old_chat_id, new_chat_id):
             SESSION.add(chat)
 
         SESSION.commit()
-from Yuriko.modules.sql import BASE, SESSION
+from Niskala.modules.sql import BASE, SESSION
