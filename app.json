@@ -10,7 +10,7 @@
       ],
     
    "logo":    "https://telegra.ph/file/b26f8a844221353be9fb0.jpg",  
-   "repository": "https://github.com/Rzydx/Yuriko",
+   "repository": "https://github.com/Rzydx/Niskala-Robot",
    "addons": [
           {
          "options": {
@@ -36,12 +36,12 @@
       "API_ID": {
          "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
          "required": true,
-         "value": "17421967"
+         "value": "13693246"
       },
       "API_HASH": {
          "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
          "required": true,
-         "value": "2173852de7de35ed8fd391b1c891893e"
+         "value": "1f37d40069cb88b2fe186e13f8301180"
       },    
       "SQLALCHEMY_DATABASE_URI": {
          "description": "Put Your elephant postgres sql db.",
@@ -57,7 +57,7 @@
       "STRING_SESSION": {
          "description": "Fill with telethon string session.",
          "required": true,
-         "value": "1BVtsOI4Bu4qktaUQl5jGrfMnA_DM5YS3tMlTpvxWq32ZnFjrrUmxfrlgmEvU9SKEUfAzGAnYHEhR_aeJQSVkvvcvLzR-75xIUNSwamKYlNcnYvSmaBtKQpOdVEad8zFPKyFz_BQQ_rMzvpuu6C20t3sutv73NinfHu6DeTFi_0gt1Dhk1GmEaPCp33FaLbmXtv34NCrNbt7ApbAXfykGJgCKNQudzVUfDo4xzvBRRr2m3PS8Oi-nW-Z0siEuJkRO39I1U092_edDzS8ch2YE7tfHd6dYtRnhG6hkHuPzM0Rk3FMzZaw7dEgMKK3GaVtJkheUIWnIpwN35aqoDifdwHpDvH5Uvec=" 
+         "value": "1BVtsOKMBu0ZkvZXs_Za9_WWR-LipprVH3nwjHQE-5trqHmUcnlTNjwvSu8R-yFCR0KVCUMGG2OAOAlKT1QBcuv0QqXxPrspFcYM3fniFqcYNGwVBb_YCKIAXaAw7VXm-5CvvblNZWEAf-OAYbEX0e_P7f5Tl6HELKVYYw2rADq_lKcX1bpKl2-PgGpr_ep1ZJ0KCjzFx1yhblF7l0hKqFRyD11r6uJEQJzx1sMmlcoPxXZw9n7VoK8TY9-mjGGlRREcgmtUops0Dw77P0HKqw5UjBRizhE0ACI_5c_J-lW7bzDY2AV7IAJ7jdVR50FGjYuLhhT-v_t5Rqe4RmLjzOG32DM5Y6TY=" 
       },
       "HEROKU_API_KEY": {
         "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
@@ -84,7 +84,7 @@
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to masha support than consider you made an enemy.",
          "required": true,
-         "value": "DurovKontol"
+         "value": "NiskalaSupport"
       },
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
