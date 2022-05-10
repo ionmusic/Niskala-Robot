@@ -83,13 +83,13 @@ NISKALA_IMG = "https://telegra.ph/file/b26f8a844221353be9fb0.jpg"
 
 PM_START_TEXT = """
 *ʜᴇʟʟᴏ {}, ɪ'ᴍ ɴɪsᴋᴀʟᴀ!*
-`ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘs!` [✨](https://telegra.ph/file/b26f8a844221353be9fb0.jpg)
-─────────────────────
+✪ `ɪ'ᴍ ᴀɴ ᴡᴀʏᴀɴɢ-ᴛʜᴇᴍᴇ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʀᴏʙᴏᴛ​` [✨](https://telegra.ph/file/b26f8a844221353be9fb0.jpg)
+────────────────────
 × *Uᴘᴛɪᴍᴇ:* `{}`
 × `{}` *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* `{}` *Cʜᴀᴛꜱ.*
-─────────────────────
-`ʜɪᴛ` /help `ᴛᴏ sᴇᴇ ᴍʏ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs.`
-ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : @IDnyaAL
+────────────────────
+✪ `ʜɪᴛ` /help `ᴛᴏ sᴇᴇ ᴍʏ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs.`
+✪ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : @IDnyaAL
 """
 
 buttons = [
@@ -112,7 +112,8 @@ HELP_STRINGS = """
 *🔥 MAIN COMMANDS 🔥*
 *Click On The Button Bellow To Get Description About Specifics Command.*
 ✗ /start : `Start Me !!`
-✗ /help : `Command To Help You.`"""
+✗ /help : `Command To Help You.`
+✗ /settings `(Group Chat Only)` : `Makes Me Show The Current Chat Settings.`"""
 
 
 
@@ -367,21 +368,19 @@ def niskala_about_callback(update, context):
     query = update.callback_query
     if query.data == "niskala_":
         query.message.edit_text(
-            text=""" *Niskala* - `A bot to manage your groups with additional features!`
-            \n`Here the basic help regarding use of Niskala.`
-            
-            \n`Almost all modules usage defined in the help menu, checkout by sending` `/help`
-            \n`Report error/bugs click the Button`""",
+            text=""" 🔥 *MAIN COMMAND* 🔥
+            \n✗ `I'm a Modular Group Management Bot With Some Fun Additions And Can Play Music In Your Group!`
+            \n✗ `See Below For Ideas On Some Of The Things I Can Help With.`""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="• Mᴀɴᴀɢᴇ", callback_data="help_back"
+                            text="👮‍♂️ Mᴀɴᴀɢᴇ", callback_data="help_back"
                         ),
                         InlineKeyboardButton(
-                            text="Mᴜsɪᴄ •", url="https://t.me/QwertYou_LoveMe/12"
+                            text="Mᴜsɪᴄ 🎶", url="https://t.me/QwertYou_LoveMe/12"
                         ),
                     ],
                     [InlineKeyboardButton(text="Bᴀᴄᴋ", callback_data="niskala_back")],
