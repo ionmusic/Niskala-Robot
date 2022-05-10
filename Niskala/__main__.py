@@ -359,7 +359,7 @@ def help_button(update, context):
 
 
 
-def niskala_about_callback(update, context):
+def niskala_help_callback(update, context):
     query = update.callback_query
     if query.data == "niskala_":
         query.message.edit_text(
