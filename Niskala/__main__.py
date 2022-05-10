@@ -82,12 +82,12 @@ def get_readable_time(seconds: int) -> str:
 NISKALA_IMG = "https://telegra.ph/file/b26f8a844221353be9fb0.jpg"
 
 PM_START_TEXT = """
-`ʜᴇʟʟᴏ {} ɪ'ᴍ ɴɪsᴋᴀʟᴀ!`
+*ʜᴇʟʟᴏ {}, ɪ'ᴍ ɴɪsᴋᴀʟᴀ!*
 `ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘs!` [✨](https://telegra.ph/file/b26f8a844221353be9fb0.jpg)
-───────────────────────
+─────────────────────
 × *Uᴘᴛɪᴍᴇ:* `{}`
 × `{}` *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* `{}` *Cʜᴀᴛꜱ.*
-───────────────────────
+─────────────────────
 `ʜɪᴛ` /help `ᴛᴏ sᴇᴇ ᴍʏ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs.`
 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : @IDnyaAL
 """
@@ -378,13 +378,13 @@ def niskala_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Manage", callback_data="help_back"
+                            text="• Mᴀɴᴀɢᴇ", callback_data="help_back"
                         ),
                         InlineKeyboardButton(
-                            text="Music", url="https://t.me/BotDuniyaXD/23"
+                            text="Mᴜsɪᴄ •", url="https://t.me/QwertYou_LoveMe/12"
                         ),
                     ],
-                    [InlineKeyboardButton(text="Back", callback_data="niskala_back")],
+                    [InlineKeyboardButton(text="Bᴀᴄᴋ", callback_data="niskala_back")],
                 ]
             ),
         )
@@ -424,7 +424,7 @@ def niskala_about_callback(update, context):
                     InlineKeyboardButton(text="Cʀᴇᴅɪᴛ", callback_data="niskala_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="Back", callback_data="niskala_back"),
+                    InlineKeyboardButton(text="Bᴀᴄᴋ", callback_data="niskala_back"),
                  
                  ]
                 ]
@@ -444,7 +444,7 @@ def niskala_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="niskala_about")]]
+                [[InlineKeyboardButton(text="Bᴀᴄᴋ", callback_data="niskala_about")]]
             ),
         )
 
@@ -457,7 +457,7 @@ def niskala_about_callback(update, context):
             f"\n\n✗ `Anda Juga Dapat Mengatur Tombol Untuk Catatan Dan Filter (Lihat Menu Bantuan)`",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="niskala_about")]]
+                [[InlineKeyboardButton(text="Bᴀᴄᴋ", callback_data="niskala_about")]]
             ),
         )
     elif query.data == "niskala_support":
@@ -473,7 +473,7 @@ def niskala_about_callback(update, context):
                     InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url="https://t.me/QwertYou_LoveMe"),
                  ],
                  [
-                    InlineKeyboardButton(text="Back", callback_data="niskala_about"),
+                    InlineKeyboardButton(text="Bᴀᴄᴋ", callback_data="niskala_about"),
                  
                  ]
                 ]
@@ -492,7 +492,7 @@ def niskala_about_callback(update, context):
                     InlineKeyboardButton(text="Sʜᴜʙʜᴀɴꜱʜᴜ", url="t.me/Shubhanshutya"),
                  ],
                  [
-                    InlineKeyboardButton(text="Back", callback_data="niskala_about"),
+                    InlineKeyboardButton(text="Bᴀᴄᴋ", callback_data="niskala_about"),
                  
                  ]
                 ]
