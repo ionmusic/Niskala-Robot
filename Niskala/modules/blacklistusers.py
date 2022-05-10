@@ -1,7 +1,7 @@
 # Module to blacklist users and prevent them from using commands by @TheRealPhoenix
 import html
 import Niskala.modules.sql.blacklistusers_sql as sql
-from Yuriko import (
+from Niskala import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
