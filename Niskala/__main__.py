@@ -363,7 +363,7 @@ def help_button(update, context):
 
 
 
-def niskala_help_callback(update, context):
+def niskala_about_callback(update, context):
     query = update.callback_query
     if query.data == "niskala_":
         query.message.edit_text(
@@ -797,7 +797,7 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
-    about_callback_handler = CallbackQueryHandler(niskala_about_callback, pattern=r"niskala_about")
+    about_callback_handler = CallbackQueryHandler(niskala_about_callback, pattern=r"niskala_")
 
     donate_handler = CommandHandler("donate", donate)
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
