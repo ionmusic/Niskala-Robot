@@ -1,3 +1,18 @@
+<p align="center">
+<a href="https://t.me/NiskalaXRobot"> <img src="https://img.shields.io/badge/Niskala-Robot-blue?&logo=telegram" alt="Niskala on Telegram" /> </a><br>
+<a href="https://python-telegram-bot.org"> <img src="https://img.shields.io/badge/PTB-13.9.0-red?&style=flat-round&logo=github" alt="Python Telegram Bot" /> </a>
+<a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a><br>
+<a href="https://docs.telethon.dev"> <img src="https://img.shields.io/badge/Telethon-1.24.0-white?&style=flat-round&logo=github" alt="Telethon" /> </a>
+<a href="https://docs.python.org"> <img src="https://img.shields.io/badge/Python-3.10.1-purple?&style=flat-round&logo=python" alt="Python" /> </a><br>
+<a href="https://github.com/Rzydx/Niskala-Robot/blob/Niskala/LICENSE"> <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License" /> </a>
+<a href="https://makeapullrequest.com"> <img src="https://img.shields.io/badge/PRs-Welcome-blue.svg?style=flat-round" alt="PRs" /> </a>
+<a href="https://GitHub.com/Rzydx/Niskala-Robot"> <img src="https://img.shields.io/badge/Maintained-Yes-blue.svg" alt="Maintenance" /> </a><br>
+</p>
+
+<p align="center">
+  <img src="https://telegra.ph/file/b26f8a844221353be9fb0.jpg">
+</p>
+
 <details>
 <summary><b>🔗 sᴛʀɪɴɢ sᴇssɪᴏɴ</b></summary>
 <br>
