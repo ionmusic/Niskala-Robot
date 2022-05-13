@@ -1,3 +1,4 @@
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <p align="center">
 <a href="https://t.me/NiskalaXRobot"> <img src="https://img.shields.io/badge/Niskala-Robot-blue?&logo=telegram" alt="Niskala on Telegram" /> </a><br>
 <a href="https://python-telegram-bot.org"> <img src="https://img.shields.io/badge/PTB-13.9.0-red?&style=flat-round&logo=github" alt="Python Telegram Bot" /> </a>
@@ -46,4 +47,4 @@
 ### Credit
 - Prime Mega
 - Yuriko Robot
-
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
