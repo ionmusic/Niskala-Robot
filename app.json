@@ -67,6 +67,10 @@
         "description": "Enter the Heroku app name here (Must an exact same name with your input above).",
         "required": false
       },
+      "BOT_NAME": {
+         "description": "name of your bot",
+         "value": "Niskala Robot"
+      },
       "BOT_USERNAME": {
          "description": "username of your bot without the @",
          "value": "NiskalaXRobot"
