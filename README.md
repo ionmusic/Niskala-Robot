@@ -55,5 +55,5 @@ This Bot Is Created By Niskala, If Your Kanging This Without Fork At Least Give 
 
 ### ᴄʀᴇᴅɪᴛ
 - ᴘʀɪᴍᴇ ᴍᴇɢᴀ
-- ʏᴜʀɪᴋᴏ ʀᴏʙᴏᴛ
+- [✓ʏᴜʀɪᴋᴏ ʀᴏʙᴏᴛ](https://github.com/AMANTYA1/Yuriko)
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
