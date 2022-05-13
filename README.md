@@ -13,6 +13,9 @@
 <p align="center">
   <img src="https://telegra.ph/file/b26f8a844221353be9fb0.jpg">
 </p>
+<h2 align="center">
+   ᴍᴇᴛᴏᴅᴇ ᴅᴇᴘʟᴏʏ
+</h2>
 
 <details>
 <summary><b>🔗 sᴛʀɪɴɢ sᴇssɪᴏɴ</b></summary>
@@ -36,15 +39,15 @@
 
 </details>
 
-### sᴜᴘᴘᴏʀᴛ & ᴜᴘᴅᴀᴛᴇs :
+### sᴜᴘᴘᴏʀᴛ & ᴜᴘᴅᴀᴛᴇs 
 <a href="https://t.me/NiskalaSupport"><img src="https://img.shields.io/badge/Join-Group%20Support-red.svg?style=for-the-badge&logo=Telegram"></a> 
 <a href="https://t.me/QwertYou_LoveMe"><img src="https://img.shields.io/badge/Join-Updates%20Channel-white.svg?style=for-the-badge&logo=Telegram"></a>
 
-### Contributors
-- [Rizky Yudha](https://github.com/Rzydx) : Niskala Devs
-- [Aman](https://github.com/AMANTYA1) : Yuriko Devs
+### ᴄᴏɴᴛʀɪʙᴜᴛᴏʀs
+- [ʀɪᴢᴋʏ ʏᴜᴅʜᴀ](https://github.com/Rzydx) : ɴɪsᴋᴀʟᴀ ᴅᴇᴠs
+- [ᴀᴍᴀɴ](https://github.com/AMANTYA1) : ʏᴜʀɪᴋᴏ ᴅᴇᴠs
 
-### Credit
-- Prime Mega
-- Yuriko Robot
+### ᴄʀᴇᴅɪᴛ
+- ᴘʀɪᴍᴇ ᴍᴇɢᴀ
+- ʏᴜʀɪᴋᴏ ʀᴏʙᴏᴛ
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
