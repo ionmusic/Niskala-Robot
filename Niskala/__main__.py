@@ -22,7 +22,8 @@ from Niskala import (
     TOKEN,
     URL,
     WEBHOOK,
-    SUPPORT_CHAT,
+    BOT_NAME,
+    BOT_USERNAME,
     dispatcher,
     StartTime,
     telethn,
@@ -82,7 +83,7 @@ def get_readable_time(seconds: int) -> str:
 NISKALA_IMG = "https://telegra.ph/file/b26f8a844221353be9fb0.jpg"
 
 PM_START_TEXT = """
-*ʜᴇʟʟᴏ {}, ɪ'ᴍ {dispatcher.bot.first_name}!*
+*ʜᴇʟʟᴏ {}, ɪ'ᴍ {BOT_NAME}!*
 ✪ `ɪ'ᴍ ᴀɴ ᴡᴀʏᴀɴɢ-ᴛʜᴇᴍᴇ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʀᴏʙᴏᴛ​`
 ────────────────────
 × *Uᴘᴛɪᴍᴇ:* `{}`
@@ -93,7 +94,7 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ {dispatcher.bot.first_name}", callback_data="niskala_about"),
+        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ {BOT_NAME}", callback_data="niskala_about"),
     ],
     [
         InlineKeyboardButton(text="ɢᴇᴛ ʜᴇʟᴘ", callback_data="niskala_"),
@@ -102,7 +103,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="💢 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 💢", url="http://t.me/{dispatcher.bot.username}?startgroup=true"),
+        InlineKeyboardButton(text="💢 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 💢", url="http://t.me/{BOT_USERNAME}?startgroup=true"),
     ],
 ]
 
@@ -406,7 +407,7 @@ def niskala_about_callback(update, context):
             
             f"\n\n✗ `Pertama Tambahkan` {dispatcher.bot.first_name} `Ke Grup Anda Dengan Menekan` [Disini](http://t.me/{dispatcher.bot.username}?startgroup=true)\n"
             f"\n✗ `Setelah Menambahkan, Promosikan saya Sebagai Admin Secara Manual Dengan Hak Penuh Untuk Pengalaman Yang Lebih Baik.`\n"
-            f"\n✗ `Kemudian Kirim ` `/admincache@{dispatcher.bot.username}` `Di Obrolan Itu Untuk Menyegarkan Daftar Admin Di Database Saya.`\n"
+            f"\n✗ `Kemudian Kirim ` `/admincache@{BOT_USERNAME}` `Di Obrolan Itu Untuk Menyegarkan Daftar Admin Di Database Saya.`\n"
             f"\n*Semua Selesai Sekarang Gunakan Tombol Yang Ada Di Bawah Ini Untuk Mengetahui Tentang Penggunaan!*\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
@@ -432,7 +433,7 @@ def niskala_about_callback(update, context):
         query.message.edit_text(
             text=f"*Mari Jadikan Grup Anda Sedikit Efektif Sekarang*"
             
-            f"\n✗ `Selamat, {dispatcher.bot.first_name} Sekarang Siap Mengelola Grup Anda.`"
+            f"\n✗ `Selamat, {BOT_NAME} Sekarang Siap Mengelola Grup Anda.`"
             f"\n\n*Alat Admin*"
             f"\n✗ `Alat Admin Dasar Membantu Anda Melindungi Dan Memperkuat Grup Anda.`"
             f"\n✗ `Anda Dapat Melarang Anggota, Menendang Anggota, Mempromosikan Seseorang Sebagai Admin Melalui Perintah Bot.`"
@@ -479,7 +480,7 @@ def niskala_about_callback(update, context):
         )
     elif query.data == "niskala_credit":
         query.message.edit_text(
-            text=f"<b> CREDIT UNTUK {dispatcher.bot.first_name} DEV'S</b>\n"
+            text=f"<b> CREDIT UNTUK {BOT_NAME} DEV'S</b>\n"
             
             f"\nBerikut Beberapa Developers Yang Membantu Pembuatan {BOT_NAME}",
             parse_mode=ParseMode.HTML,
