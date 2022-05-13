@@ -6,7 +6,7 @@
          "advance",
          "group",
          "manager",
-         "naorobot"
+         "niskalarobot"
       ],
     
    "logo":    "https://telegra.ph/file/b26f8a844221353be9fb0.jpg",  
@@ -71,7 +71,10 @@
          "description": "username of your bot without the @",
          "value": "NiskalaXRobot"
       },
-
+      "BOT_NAME": { 
+         "description": "name of your bot", 
+         "value": "Prime Mega"
+      },
       "BOT_ID": {
          "description": "to get your bot_id using other bot or userbot",
          "value": "5363549359"
