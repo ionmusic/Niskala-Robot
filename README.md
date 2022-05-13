@@ -13,6 +13,12 @@
 <p align="center">
   <img src="https://telegra.ph/file/b26f8a844221353be9fb0.jpg">
 </p>
+
+```
+This Bot Is Created By Niskala, If Your Kanging This Without Fork At Least Give a Credit To Get a Smile Of My Hard Work. 
+- Niskala
+```
+
 <h2 align="center">
    ᴍᴇᴛᴏᴅᴇ ᴅᴇᴘʟᴏʏ
 </h2>
