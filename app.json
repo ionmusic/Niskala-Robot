@@ -31,17 +31,17 @@
       "TOKEN": {
          "description": "Your bot token. Get one from @BotFather duh",
          "required": true,
-         "value": "5363549359:AAFUdFU61S53SAu7N3ZYakO4KAHrjSuJd-U"
+         "value": ""
       },
       "API_ID": {
          "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
          "required": true,
-         "value": "13693246"
+         "value": ""
       },
       "API_HASH": {
          "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
          "required": true,
-         "value": "1f37d40069cb88b2fe186e13f8301180"
+         "value": ""
       },    
       "SQLALCHEMY_DATABASE_URI": {
          "description": "Put Your elephant postgres sql db.",
@@ -57,7 +57,7 @@
       "STRING_SESSION": {
          "description": "Fill with telethon string session.",
          "required": true,
-         "value": "1BVtsOKMBu0ZkvZXs_Za9_WWR-LipprVH3nwjHQE-5trqHmUcnlTNjwvSu8R-yFCR0KVCUMGG2OAOAlKT1QBcuv0QqXxPrspFcYM3fniFqcYNGwVBb_YCKIAXaAw7VXm-5CvvblNZWEAf-OAYbEX0e_P7f5Tl6HELKVYYw2rADq_lKcX1bpKl2-PgGpr_ep1ZJ0KCjzFx1yhblF7l0hKqFRyD11r6uJEQJzx1sMmlcoPxXZw9n7VoK8TY9-mjGGlRREcgmtUops0Dw77P0HKqw5UjBRizhE0ACI_5c_J-lW7bzDY2AV7IAJ7jdVR50FGjYuLhhT-v_t5Rqe4RmLjzOG32DM5Y6TY=" 
+         "value": "" 
       },
       "HEROKU_API_KEY": {
         "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
@@ -73,11 +73,11 @@
       },
       "BOT_NAME": { 
          "description": "name of your bot", 
-         "value": "Prime Mega"
+         "value": "Niskala Robot"
       },
       "BOT_ID": {
          "description": "to get your bot_id using other bot or userbot",
-         "value": "5363549359"
+         "value": ""
       },
 
       "OWNER_USERNAME": {
@@ -92,7 +92,7 @@
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
          "required": true,
-         "value": "mongodb+srv://anya234:anya234@cluster0.up1ea.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+         "value": ""
       },
       "IBM_WATSON_CRED_URL": {
          "description": "This is required for the speech to text module. Get your USERNAME from https://console.bluemix.net/docs/services/speech-to-text/getting-started.html",
@@ -142,7 +142,7 @@
       "sw_api": {
          "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
          "required": false,
-         "value": "RpTdGLJzkRtPUUR7m59ZQI2zGh_BFiK84PE9ejwX0uyzJKqwSQ4SgBhr1lWW_wxu"
+         "value": ""
       }, 
       "STRICT_GBAN": {
          "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
