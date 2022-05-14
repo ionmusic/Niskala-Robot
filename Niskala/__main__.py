@@ -22,8 +22,6 @@ from Niskala import (
     TOKEN,
     URL,
     WEBHOOK,
-    BOT_NAME,
-    BOT_USERNAME,
     dispatcher,
     StartTime,
     telethn,
@@ -83,7 +81,7 @@ def get_readable_time(seconds: int) -> str:
 NISKALA_IMG = "https://telegra.ph/file/b26f8a844221353be9fb0.jpg"
 
 PM_START_TEXT = """
-*ʜᴇʟʟᴏ {}, ɪ'ᴍ {BOT_NAME}!*
+*ʜᴇʟʟᴏ {}, ɪ'ᴍ Niskala!*
 ✪ `ɪ'ᴍ ᴀɴ ᴡᴀʏᴀɴɢ-ᴛʜᴇᴍᴇ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʀᴏʙᴏᴛ​`
 ────────────────────
 × *Uᴘᴛɪᴍᴇ:* `{}`
@@ -234,7 +232,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "Hai Bro I'm {dispatcher.bot.first_name}!\n<b>Active since:</b> <code>{}</code>".format(
+            "Hai Bro I'm Niskala!\n<b>Active since:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML
