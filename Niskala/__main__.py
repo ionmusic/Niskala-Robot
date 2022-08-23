@@ -82,7 +82,7 @@ NISKALA_IMG = "https://telegra.ph/file/b26f8a844221353be9fb0.jpg"
 
 PM_START_TEXT = """
 *ʜᴇʟʟᴏ {}, ɪ'ᴍ ɴɪsᴋᴀʟᴀ!*
-✪ `ɪ'ᴍ ᴀɴ ᴡᴀʏᴀɴɢ-ᴛʜᴇᴍᴇ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʀᴏʙᴏᴛ​`(https://telegra.ph/file/db94c0956e6ab22d6be7a.jpg)
+✪ `ɪ'ᴍ ᴀɴ ᴡᴀʏᴀɴɢ-ᴛʜᴇᴍᴇ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʀᴏʙᴏᴛ​`[](https://telegra.ph/file/db94c0956e6ab22d6be7a.jpg)
 ────────────────────
 × *Uᴘᴛɪᴍᴇ:* `{}`
 × `{}` *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* `{}` *Cʜᴀᴛꜱ.*
@@ -400,6 +400,27 @@ def niskala_about_callback(update, context):
                 timeout=60,
                 disable_web_page_preview=False,
         )
+elif query.data == "music_":
+        query.message.edit_text(
+            text=f"*ʙᴀɢᴊᴀ ᴋᴜᴍᴀʏᴀɴɢᴀɴ*"
+            f"\n*ʙᴇʀɪᴋᴜᴛ ᴘᴇʀɪɴᴛᴀʜ ᴍᴜsɪᴋ ʏᴀɴɢ ᴛᴇʀsᴇᴅɪᴀ:*"
+
+            f"\n\n🔰 ᴘᴇʀɪɴᴛᴀʜ sᴇᴍᴜᴀ ᴏʀᴀɴɢ"
+            f"\n» /Play - ᴋᴇᴛɪᴋ ʟɪɴᴋ ᴀᴛᴀᴜ ᴊᴜᴅᴜʟ ʟᴀɢᴜ."
+
+            f"\n\n👮‍♂️ ᴘᴇʀɪɴᴛᴀʜ ᴀᴅᴍɪɴ"
+            f"\n» /Pause - ᴜɴᴛᴜᴋ ᴍᴇɴᴊᴇᴅᴀ ᴛʀᴇᴋ ʏᴀɴɢ sᴇᴅᴀɴɢ ᴅɪᴘᴜᴛᴀʀ."
+            f"\n» /Resume - ᴜɴᴛᴜᴋ ᴍᴇᴍᴜᴛᴀʀ ᴛʀᴇᴋ ʏᴀɴɢ ᴅɪᴊᴇᴅᴀ sᴇʙᴇʟᴜᴍɴʏᴀ."
+            f"\n» /End - ᴜɴᴛᴜᴋ ᴍᴇɴɢʜᴇɴᴛɪᴋᴀɴ ᴘᴇᴍᴜᴛᴀʀᴀɴ ᴛʀᴇᴋ ᴅᴀɴ ᴍᴇɴɢʜᴀᴘᴜs ᴀɴᴛʀᴇᴀɴ."
+            f"\n» /Skip - ᴜɴᴛᴜᴋ ᴘᴇʀɢɪ ᴋᴇ ᴛʀᴇᴋ sᴇʟᴀɴᴊᴜᴛɴʏᴀ."
+
+            f"\n*ᴊɪᴋᴀ ᴀᴅᴀ ᴋᴇʟᴜʜᴀɴ. ʜᴀʀᴀᴘ ʜᴜʙᴜɴɢɪ @IDnyaAL*",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [[InlineKeyboardButton(text="Bᴀᴄᴋ", callback_data="niskala_")]]
+            ),
+        )
     elif query.data == "niskala_about":
         query.message.edit_text(
             text=f"*Berikut Bantuan Dasar Tentang Cara menggunakan Saya?*"
@@ -479,7 +500,7 @@ def niskala_about_callback(update, context):
         )
     elif query.data == "niskala_credit":
         query.message.edit_text(
-            text=f"<b> CREDIT UNTUK Niskala DEV'S</b>\n"
+            text=f"<b> CREDIT UNTUK NISKALA DEV'S</b>\n"
             
             f"\nBerikut Beberapa Developers Yang Membantu Pembuatan {BOT_NAME}",
             parse_mode=ParseMode.HTML,
@@ -494,27 +515,6 @@ def niskala_about_callback(update, context):
                  
                  ]
                 ]
-            ),
-        ) 
-    elif query.data == "music_":
-        query.message.edit_text(
-            text=f"*ʙᴀɢᴊᴀ ᴋᴜᴍᴀʏᴀɴɢᴀɴ*"
-            f"\n*ʙᴇʀɪᴋᴜᴛ ᴘᴇʀɪɴᴛᴀʜ ᴍᴜsɪᴋ ʏᴀɴɢ ᴛᴇʀsᴇᴅɪᴀ:*"
-
-            f"\n\n🔰 ᴘᴇʀɪɴᴛᴀʜ sᴇᴍᴜᴀ ᴏʀᴀɴɢ"
-            f"\n» /Play - ᴋᴇᴛɪᴋ ʟɪɴᴋ ᴀᴛᴀᴜ ᴊᴜᴅᴜʟ ʟᴀɢᴜ."
-
-            f"\n\n👮‍♂️ ᴘᴇʀɪɴᴛᴀʜ ᴀᴅᴍɪɴ"
-            f"\n» /Pause - ᴜɴᴛᴜᴋ ᴍᴇɴᴊᴇᴅᴀ ᴛʀᴇᴋ ʏᴀɴɢ sᴇᴅᴀɴɢ ᴅɪᴘᴜᴛᴀʀ."
-            f"\n» /Resume - ᴜɴᴛᴜᴋ ᴍᴇᴍᴜᴛᴀʀ ᴛʀᴇᴋ ʏᴀɴɢ ᴅɪᴊᴇᴅᴀ sᴇʙᴇʟᴜᴍɴʏᴀ."
-            f"\n» /End - ᴜɴᴛᴜᴋ ᴍᴇɴɢʜᴇɴᴛɪᴋᴀɴ ᴘᴇᴍᴜᴛᴀʀᴀɴ ᴛʀᴇᴋ ᴅᴀɴ ᴍᴇɴɢʜᴀᴘᴜs ᴀɴᴛʀᴇᴀɴ."
-            f"\n» /Skip - ᴜɴᴛᴜᴋ ᴘᴇʀɢɪ ᴋᴇ ᴛʀᴇᴋ sᴇʟᴀɴᴊᴜᴛɴʏᴀ."
-
-            f"\n*ᴊɪᴋᴀ ᴀᴅᴀ ᴋᴇʟᴜʜᴀɴ. ʜᴀʀᴀᴘ ʜᴜʙᴜɴɢɪ @IDnyaAL*",
-            parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Bᴀᴄᴋ", callback_data="niskala_about")]]
             ),
         )
         
