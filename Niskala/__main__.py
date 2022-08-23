@@ -514,6 +514,7 @@ def niskala_about_callback(update, context):
                 ]
             ),
         )
+
         
 def get_help(update: Update, context: CallbackContext):
     chat = update.effective_chat  # type: Optional[Chat]
