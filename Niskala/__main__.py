@@ -406,7 +406,7 @@ def niskala_about_callback(update, context):
             
             f"\n\n✗ `Pertama Tambahkan` {dispatcher.bot.first_name} `Ke Grup Anda Dengan Menekan` [Disini](http://t.me/{dispatcher.bot.username}?startgroup=true)\n"
             f"\n✗ `Setelah Menambahkan, Promosikan saya Sebagai Admin Secara Manual Dengan Hak Penuh Untuk Pengalaman Yang Lebih Baik.`\n"
-            f"\n✗ `Kemudian Kirim ` `/admincache@{BOT_USERNAME}` `Di Obrolan Itu Untuk Menyegarkan Daftar Admin Di Database Saya.`\n"
+            f"\n✗ `Kemudian Kirim ` `/admincache@NiskalaXRobot` `Di Obrolan Itu Untuk Menyegarkan Daftar Admin Di Database Saya.`\n"
             f"\n*Semua Selesai Sekarang Gunakan Tombol Yang Ada Di Bawah Ini Untuk Mengetahui Tentang Penggunaan!*\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
