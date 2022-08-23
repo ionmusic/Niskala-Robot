@@ -88,12 +88,12 @@ PM_START_TEXT = """
 × `{}` *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* `{}` *Cʜᴀᴛꜱ.*
 ────────────────────
 ✪ `ʜɪᴛ` /help `ᴛᴏ sᴇᴇ ᴍʏ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs.`
-✪ 'ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ' 'ʙʏ' @IDnyaAL
+✪ `ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ` `ʙʏ` @IDnyaAL
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ {BOT_NAME}", callback_data="niskala_about"),
+        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ ɴɪsᴋᴀʟᴀ", callback_data="niskala_about"),
     ],
     [
         InlineKeyboardButton(text="ɢᴇᴛ ʜᴇʟᴘ", callback_data="niskala_"),
@@ -102,7 +102,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="💢 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 💢", url="http://t.me/{BOT_USERNAME}?startgroup=true"),
+        InlineKeyboardButton(text="💢 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 💢", url="http://t.me/NiskalaXRobot?startgroup=true"),
     ],
 ]
 
