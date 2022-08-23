@@ -82,7 +82,7 @@ NISKALA_IMG = "https://telegra.ph/file/b26f8a844221353be9fb0.jpg"
 
 PM_START_TEXT = """
 *ʜᴇʟʟᴏ {}, ɪ'ᴍ Niskala!*
-✪ `ɪ'ᴍ ᴀɴ ᴡᴀʏᴀɴɢ-ᴛʜᴇᴍᴇ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʀᴏʙᴏᴛ​`[✨] https://telegra.ph/file/db94c0956e6ab22d6be7a.jpg
+✪ `ɪ'ᴍ ᴀɴ ᴡᴀʏᴀɴɢ-ᴛʜᴇᴍᴇ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʀᴏʙᴏᴛ​`[✨] https://telegra.ph/file/db94c0956e6ab22d6be7a.jpg)
 ────────────────────
 × *Uᴘᴛɪᴍᴇ:* `{}`
 × `{}` *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* `{}` *Cʜᴀᴛꜱ.*
@@ -432,7 +432,7 @@ def niskala_about_callback(update, context):
         query.message.edit_text(
             text=f"*Mari Jadikan Grup Anda Sedikit Efektif Sekarang*"
             
-            f"\n✗ `Selamat, {BOT_NAME} Sekarang Siap Mengelola Grup Anda.`"
+            f"\n✗ `Selamat, Niskala Sekarang Siap Mengelola Grup Anda.`"
             f"\n\n*Alat Admin*"
             f"\n✗ `Alat Admin Dasar Membantu Anda Melindungi Dan Memperkuat Grup Anda.`"
             f"\n✗ `Anda Dapat Melarang Anggota, Menendang Anggota, Mempromosikan Seseorang Sebagai Admin Melalui Perintah Bot.`"
@@ -460,7 +460,7 @@ def niskala_about_callback(update, context):
         )
     elif query.data == "niskala_support":
         query.message.edit_text(
-            text="* Obrolan Dukungan {BOT_NAME}*"
+            text="*Obrolan Dukungan Niskala*"
             
             "\n\n✗ `Bergabunglah Dengan Grup/Saluran Dukungan`",
             parse_mode=ParseMode.MARKDOWN,
@@ -479,7 +479,7 @@ def niskala_about_callback(update, context):
         )
     elif query.data == "niskala_credit":
         query.message.edit_text(
-            text=f"<b> CREDIT UNTUK {BOT_NAME} DEV'S</b>\n"
+            text=f"<b> CREDIT UNTUK Niskala DEV'S</b>\n"
             
             f"\nBerikut Beberapa Developers Yang Membantu Pembuatan {BOT_NAME}",
             parse_mode=ParseMode.HTML,
