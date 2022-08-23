@@ -400,7 +400,7 @@ def niskala_about_callback(update, context):
                 timeout=60,
                 disable_web_page_preview=False,
         )
-elif query.data == "music_":
+    elif query.data == "music_":
         query.message.edit_text(
             text=f"*ʙᴀɢᴊᴀ ᴋᴜᴍᴀʏᴀɴɢᴀɴ*"
             f"\n*ʙᴇʀɪᴋᴜᴛ ᴘᴇʀɪɴᴛᴀʜ ᴍᴜsɪᴋ ʏᴀɴɢ ᴛᴇʀsᴇᴅɪᴀ:*"
