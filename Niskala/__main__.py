@@ -499,7 +499,7 @@ def niskala_about_callback(update, context):
         query.message.edit_text(
             text=f"<b> CREDIT UNTUK NISKALA DEV'S</b>\n"
             
-            f"\nBerikut Beberapa Developers Yang Membantu Pembuatan {BOT_NAME}",
+            f"\nBerikut Beberapa Developers Yang Membantu Pembuatan Niskala",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
