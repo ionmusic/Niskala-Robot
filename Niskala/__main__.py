@@ -121,7 +121,7 @@ HELP_STRINGS = """
 » /Resume : `Memutar Trek Yang Dijeda Sebelumnya.`
 » /Skip : `Pergi Ke Trek Selanjutnya.`
 » /End : `Menghentikan Pemutaran Trek Dan Menghapus Antrean.`
-» /settings : `Membuat Saya Menunjukkan Pengaturan Obrolan Saat Ini (Hanya Obrolan Grup).`
+» /Settings : `Membuat Saya Menunjukkan Pengaturan Obrolan Saat Ini (Hanya Obrolan Grup).`
 
 *Klik Tombol Di Bawah Untuk Mendapatkan Deskripsi Tentang Perintah Spesifik.*"""
 
@@ -450,6 +450,9 @@ def niskala_about_callback(update, context):
                  [
                     InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", callback_data="niskala_support"),
                     InlineKeyboardButton(text="Cʀᴇᴅɪᴛ", callback_data="niskala_credit"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="Iɴsᴛᴀɢʀᴀᴍ", link="https://www.instagram.com/invites/contact/?i=1bk9e2vezw3ma&utm_content=8yz3iiq"),
                  ],
                  [
                     InlineKeyboardButton(text="Bᴀᴄᴋ", callback_data="niskala_back"),
