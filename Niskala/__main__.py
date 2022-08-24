@@ -379,7 +379,7 @@ def niskala_about_callback(update, context):
                             text="👮‍♂️ Mᴀɴᴀɢᴇ", callback_data="help_back"
                         ),
                         InlineKeyboardButton(
-                            text="Mᴜsɪᴄ 🎶", callback_data="music_"
+                            text="Mᴜsɪᴄ 🎶", callback_data="niskalamusic_"
                         ),
                     ],
                     [InlineKeyboardButton(text="Bᴀᴄᴋ", callback_data="niskala_back")],
@@ -400,7 +400,7 @@ def niskala_about_callback(update, context):
                 timeout=60,
                 disable_web_page_preview=False,
         )
-    elif query.data == "music_":
+    elif query.data == "niskalamusic_":
         query.message.edit_text(
             text=f"*ʙᴀɢᴊᴀ ᴋᴜᴍᴀʏᴀɴɢᴀɴ*"
             f"\n*ʙᴇʀɪᴋᴜᴛ ᴘᴇʀɪɴᴛᴀʜ ᴍᴜsɪᴋ ʏᴀɴɢ ᴛᴇʀsᴇᴅɪᴀ:*"
