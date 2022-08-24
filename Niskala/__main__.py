@@ -403,6 +403,7 @@ def niskala_about_callback(update, context):
     elif query.data == "niskalamusic_":
         query.message.edit_text(
             text=f"*ʙᴀɢᴊᴀ ᴋᴜᴍᴀʏᴀɴɢᴀɴ*"
+
             f"\n*ʙᴇʀɪᴋᴜᴛ ᴘᴇʀɪɴᴛᴀʜ ᴍᴜsɪᴋ ʏᴀɴɢ ᴛᴇʀsᴇᴅɪᴀ:*"
             f"\n\n🔰 ᴘᴇʀɪɴᴛᴀʜ sᴇᴍᴜᴀ ᴏʀᴀɴɢ"
             f"\n» /Play - ᴋᴇᴛɪᴋ ʟɪɴᴋ ᴀᴛᴀᴜ ᴊᴜᴅᴜʟ ʟᴀɢᴜ."
