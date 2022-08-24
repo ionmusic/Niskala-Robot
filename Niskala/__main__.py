@@ -108,11 +108,12 @@ buttons = [
 
 
 HELP_STRINGS = """
-*🔥 MAIN COMMANDS 🔥*
-*Click On The Button Bellow To Get Description About Specifics Command.*
-✗ /start : `Start Me !!`
-✗ /help : `Command To Help You.`
-✗ /settings `(Group Chat Only)` : `Makes Me Show The Current Chat Settings.`"""
+*BAGJA KUMAYANGAN*
+*Berikut Perintah Manage Yang Tersedia:*
+» /start : `Untuk Memulai Aku !!`
+» /help : `Perintah Untuk Membantu Kamu`
+» /settings `(Hanya Obrolan Gru0)` : `Untuk Membuat Saya Menunjukkan Pengaturan Obrolan Saat Ini.`
+Klik Tombol Di Bawah Untuk Mendapatkan Deskripsi Tentang Perintah Spesifik."""
 
 
 
