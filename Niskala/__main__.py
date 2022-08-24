@@ -108,7 +108,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-*✨ BAGJA KUMAYANGAN ✨*
+    *✨ BAGJA KUMAYANGAN ✨*
 *Berikut Perintah Yang Tersedia:*
 
 *🔰 Perintah Semua Orang*
@@ -117,11 +117,11 @@ HELP_STRINGS = """
 » /Play : `Ketik Link Atau Judul Lagu Di Obrolan (/Play Halu).`
 
 *🔰 Perintah Admin*
-» /Pause : `Untuk Menjeda Trek Yang Sedang Diputar.`
-» /Resume : `Untuk Memutar Trek Yang Dijeda Sebelumnya.`
-» /Skip : `Untuk Pergi Ke Trek Selanjutnya.`
-» /End : `Untuk Menghentikan Pemutaran Trek Dan Menghapus Antrean.`
-» /settings : `Untuk Membuat Saya Menunjukkan Pengaturan Obrolan Saat Ini (Hanya Obrolan Grup).`
+» /Pause : `Menjeda Trek Yang Sedang Diputar.`
+» /Resume : `Memutar Trek Yang Dijeda Sebelumnya.`
+» /Skip : `Pergi Ke Trek Selanjutnya.`
+» /End : `Menghentikan Pemutaran Trek Dan Menghapus Antrean.`
+» /settings : `Membuat Saya Menunjukkan Pengaturan Obrolan Saat Ini (Hanya Obrolan Grup).`
 
 *Klik Tombol Di Bawah Untuk Mendapatkan Deskripsi Tentang Perintah Spesifik.*"""
 
