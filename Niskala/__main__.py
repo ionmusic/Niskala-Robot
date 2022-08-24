@@ -109,11 +109,13 @@ buttons = [
 
 HELP_STRINGS = """
 *BAGJA KUMAYANGAN*
-*Berikut Perintah Manage Yang Tersedia:*
+
+*🔰 Berikut Perintah Manage Yang Tersedia:*
 » /start : `Untuk Memulai Aku !!`
 » /help : `Perintah Untuk Membantu Kamu`
 » /settings `(Hanya Obrolan Grup)` : `Untuk Membuat Saya Menunjukkan Pengaturan Obrolan Saat Ini.`
-Klik Tombol Di Bawah Untuk Mendapatkan Deskripsi Tentang Perintah Spesifik."""
+
+*🔰 Klik Tombol Di Bawah Untuk Mendapatkan Deskripsi Tentang Perintah Spesifik.*"""
 
 
 
@@ -380,7 +382,7 @@ def niskala_about_callback(update, context):
                             text="👮‍♂️ Mᴀɴᴀɢᴇ", callback_data="help_back"
                         ),
                         InlineKeyboardButton(
-                            text="Mᴜsɪᴄ 🎶", callback_data="niskalamusic_"
+                            text="Mᴜsɪᴄ 🎶",  callback_data="niskalamusic_"
                         ),
                     ],
                     [InlineKeyboardButton(text="Bᴀᴄᴋ", callback_data="niskala_back")],
@@ -417,7 +419,7 @@ def niskala_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Bᴀᴄᴋ", callback_data="niskala_about")]]
+                [[InlineKeyboardButton(text="Bᴀᴄᴋ", callback_data="niskala_")]]
             ),
         )
     elif query.data == "niskala_about":
