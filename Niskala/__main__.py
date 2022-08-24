@@ -452,7 +452,7 @@ def niskala_about_callback(update, context):
                     InlineKeyboardButton(text="Cʀᴇᴅɪᴛ", callback_data="niskala_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="Iɴsᴛᴀɢʀᴀᴍ", link="https://www.instagram.com/invites/contact/?i=1bk9e2vezw3ma&utm_content=8yz3iiq"),
+                    InlineKeyboardButton(text="Iɴsᴛᴀɢʀᴀᴍ", url="https://www.instagram.com/invites/contact/?i=1bk9e2vezw3ma&utm_content=8yz3iiq"),
                  ],
                  [
                     InlineKeyboardButton(text="Bᴀᴄᴋ", callback_data="niskala_back"),
