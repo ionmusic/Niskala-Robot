@@ -96,7 +96,7 @@ buttons = [
         InlineKeyboardButton(text="ᴀʙᴏᴜᴛ ɴɪsᴋᴀʟᴀ", callback_data="niskala_about"),
     ],
     [
-        InlineKeyboardButton(text="ɢᴇᴛ ʜᴇʟᴘ", callback_data="niskala_"),
+        InlineKeyboardButton(text="ɢᴇᴛ ʜᴇʟᴘ", callback_data="help_back"),
         InlineKeyboardButton(
             text="ᴛʀʏ ɪɴʟɪɴᴇ​​", switch_inline_query_current_chat=""
         ),
@@ -108,14 +108,22 @@ buttons = [
 
 
 HELP_STRINGS = """
-*BAGJA KUMAYANGAN*
+*✨ BAGJA KUMAYANGAN ✨*
+*Berikut Perintah Yang Tersedia:*
 
-*🔰 Berikut Perintah Manage Yang Tersedia:*
-» /start : `Untuk Memulai Aku !!`
-» /help : `Perintah Untuk Membantu Kamu`
-» /settings `(Hanya Obrolan Grup)` : `Untuk Membuat Saya Menunjukkan Pengaturan Obrolan Saat Ini.`
+*🔰 Perintah Semua Orang*
+» /Start : `Untuk Memulai Aku !!`
+» /Help : `Perintah Untuk Membantu Kamu.`
+» /Play : `Ketik Link Atau Judul Lagu Di Obrolan (/Play Halu).`
 
-*🔰 Klik Tombol Di Bawah Untuk Mendapatkan Deskripsi Tentang Perintah Spesifik.*"""
+*🔰 Perintah Admin*
+» /Pause : `Untuk Menjeda Trek Yang Sedang Diputar.`
+» /Resume : `Untuk Memutar Trek Yang Dijeda Sebelumnya.`
+» /Skip : `Untuk Pergi Ke Trek Selanjutnya.`
+» /End : `Untuk Menghentikan Pemutaran Trek Dan Menghapus Antrean.`
+» /settings : `Untuk Membuat Saya Menunjukkan Pengaturan Obrolan Saat Ini (Hanya Obrolan Grup).`
+
+*Klik Tombol Di Bawah Untuk Mendapatkan Deskripsi Tentang Perintah Spesifik.*"""
 
 
 
