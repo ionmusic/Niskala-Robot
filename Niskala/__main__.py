@@ -112,7 +112,7 @@ HELP_STRINGS = """
 *Berikut Perintah Manage Yang Tersedia:*
 » /start : `Untuk Memulai Aku !!`
 » /help : `Perintah Untuk Membantu Kamu`
-» /settings `(Hanya Obrolan Gru0)` : `Untuk Membuat Saya Menunjukkan Pengaturan Obrolan Saat Ini.`
+» /settings `(Hanya Obrolan Grup)` : `Untuk Membuat Saya Menunjukkan Pengaturan Obrolan Saat Ini.`
 Klik Tombol Di Bawah Untuk Mendapatkan Deskripsi Tentang Perintah Spesifik."""
 
 
