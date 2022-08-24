@@ -96,7 +96,7 @@ buttons = [
         InlineKeyboardButton(text="ᴀʙᴏᴜᴛ ɴɪsᴋᴀʟᴀ", callback_data="niskala_about"),
     ],
     [
-        InlineKeyboardButton(text="ɢᴇᴛ ʜᴇʟᴘ", callback_data="niskala_"),
+        InlineKeyboardButton(text="ɢᴇᴛ ʜᴇʟᴘ", callback_data="help_back"),
         InlineKeyboardButton(
             text="ᴛʀʏ ɪɴʟɪɴᴇ​​", switch_inline_query_current_chat=""
         ),
@@ -415,7 +415,7 @@ def niskala_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Bᴀᴄᴋ", callback_data="niskala_")]]
+                [[InlineKeyboardButton(text="Bᴀᴄᴋ", callback_data="niskala_about")]]
             ),
         )
     elif query.data == "niskala_about":
@@ -438,6 +438,9 @@ def niskala_about_callback(update, context):
                  [
                     InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", callback_data="niskala_support"),
                     InlineKeyboardButton(text="Cʀᴇᴅɪᴛ", callback_data="niskala_credit"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="Mᴜsɪᴄ Pʟᴀʏᴇʀ", callback_data="niskalamusic_"),
                  ],
                  [
                     InlineKeyboardButton(text="Bᴀᴄᴋ", callback_data="niskala_back"),
