@@ -82,7 +82,7 @@ NISKALA_IMG = "https://telegra.ph/file/b26f8a844221353be9fb0.jpg"
 
 PM_START_TEXT = """
 *ʜᴇʟʟᴏ {}, ɪ'ᴍ ɴɪsᴋᴀʟᴀ!*
-✪ `ɪ'ᴍ ᴀɴ ᴡᴀʏᴀɴɢ-ᴛʜᴇᴍᴇ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʀᴏʙᴏᴛ​` [✨](https://telegra.ph/file/db94c0956e6ab22d6be7a.jpg)
+✪ `ɪ'ᴍ ᴀɴ ᴡᴀʏᴀɴɢ-ᴛʜᴇᴍᴇ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʀᴏʙᴏᴛ​` [✨](https://telegra.ph/file/b12bb872e3609f6efec90.jpg)
 ────────────────────
 × *Uᴘᴛɪᴍᴇ:* `{}`
 × `{}` *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* `{}` *Cʜᴀᴛꜱ.*
