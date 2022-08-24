@@ -367,9 +367,9 @@ def niskala_about_callback(update, context):
     query = update.callback_query
     if query.data == "niskala_":
         query.message.edit_text(
-            text=""" 🔥 *MAIN COMMAND* 🔥
-            \n `I'm a Modular Group Management Bot With Some Fun Additions And Can Play Music In Your Group!`
-            \n *See Below For Ideas On Some Of The Things I Can Help With.*""",
+            text=""" 🔥 *Perintah Utama* 🔥
+            \n `Saya Bot Manajemen Grup Modular Dengan Beberapa Tambahan Yang Menyenangkan Dan Dapat Memutar Musik Di Grup Anda!`
+            \n *Lihat Di Bawah Untuk Ide - Ide Tentang Beberapa Hal Yang Dapat Saya Bantu.*""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
