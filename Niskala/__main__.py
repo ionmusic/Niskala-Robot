@@ -367,21 +367,21 @@ def niskala_about_callback(update, context):
     query = update.callback_query
     if query.data == "niskala_":
         query.message.edit_text(
-            text=""" 🔥 *Perintah Utama* 🔥
-            \n `Saya Bot Manajemen Grup Modular Dengan Beberapa Tambahan Yang Menyenangkan Dan Dapat Memutar Musik Di Grup Anda!`
-            \n *Lihat Di Bawah Untuk Ide - Ide Tentang Beberapa Hal Yang Dapat Saya Bantu.*""",
+            text=f"*BAGJA KUMAYANGAN*"
+
+            f"\n*Berikut Perintah Musik Yang Tersedia:*"
+            f"\n\n🔰 Perintah Semua Orang"
+            f"\n» `/Play` - Ketik Link Atau Judul Lagu."
+            f"\n\n👮‍♂️ Perintah Admin"
+            f"\n» `/Pause` - Untuk Menjeda Trek Yang Sedang Diputar."
+            f"\n» `/Resume` - Untuk Memutar Trek Yang Dijeda Sebelumnya."
+            f"\n» `/End` - Untuk Menghentikan Pemutaran Trek Dan Menghapus Antrean."
+            f"\n» `/Skip` - Untuk Pergi Ke Trek Selanjutnya."
+            f"\n\n*Jika Ada Keluhan. Harap Hubungi @IDnyaAL*",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [
-                        InlineKeyboardButton(
-                            text="👮‍♂️ Mᴀɴᴀɢᴇ", callback_data="help_back"
-                        ),
-                        InlineKeyboardButton(
-                            text="Mᴜsɪᴄ 🎶",  callback_data="niskalamusic_"
-                        ),
-                    ],
                     [InlineKeyboardButton(text="Bᴀᴄᴋ", callback_data="niskala_back")],
                 ]
             ),
@@ -422,7 +422,7 @@ def niskala_about_callback(update, context):
                     InlineKeyboardButton(text="Cʀᴇᴅɪᴛ", callback_data="niskala_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="MᴜsɪᴄPʟᴀʏᴇʀ", callback_data="niskalamusic_"),
+                    InlineKeyboardButton(text="MᴜsɪᴄPʟᴀʏᴇʀ", callback_data="niskala_"),
                  ],
                  [
                     InlineKeyboardButton(text="Bᴀᴄᴋ", callback_data="niskala_back"),
