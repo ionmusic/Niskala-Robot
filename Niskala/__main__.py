@@ -108,23 +108,12 @@ buttons = [
 
 
 HELP_STRINGS = """
-    *✨ BAGJA KUMAYANGAN ✨*
-*Berikut Perintah Yang Tersedia:*
+    ✨ BAGJA KUMAYANGAN ✨
 
-*🔰 Perintah Semua Orang*
+`Klik Tombol Di Bawah Untuk Mendapatkan Deskripsi Tentang Perintah Spesifik.`
 » /Start : `Untuk Memulai Aku !!`
 » /Help : `Perintah Untuk Membantu Kamu.`
-» /Play : `Ketik Link Atau Judul Lagu Di Obrolan (/Play Halu).`
-
-*🔰 Perintah Admin*
-» /Pause : `Menjeda Trek Yang Sedang Diputar.`
-» /Resume : `Memutar Trek Yang Dijeda Sebelumnya.`
-» /Skip : `Pergi Ke Trek Selanjutnya.`
-» /End : `Menghentikan Pemutaran Trek Dan Menghapus Antrean.`
-» /Settings : `Membuat Saya Menunjukkan Pengaturan Obrolan Saat Ini (Hanya Obrolan Grup).`
-
-*Klik Tombol Di Bawah Untuk Mendapatkan Deskripsi Tentang Perintah Spesifik.*"""
-
+» /Settings : `Membuat Saya Menunjukkan Pengaturan Obrolan Saat Ini (Hanya Obrolan Grup).`"":
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
@@ -411,6 +400,7 @@ def niskala_about_callback(update, context):
                 timeout=60,
                 disable_web_page_preview=False,
         )
+
     elif query.data == "niskalamusic_":
         query.message.edit_text(
             text=f"*BAGJA KUMAYANGAN*"
@@ -427,7 +417,7 @@ def niskala_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Bᴀᴄᴋ", callback_data="niskala_")]]
+                [[InlineKeyboardButton(text="Bᴀᴄᴋ", callback_data="niskala_about")]]
             ),
         )
     elif query.data == "niskala_about":
@@ -452,7 +442,7 @@ def niskala_about_callback(update, context):
                     InlineKeyboardButton(text="Cʀᴇᴅɪᴛ", callback_data="niskala_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="Iɴsᴛᴀɢʀᴀᴍ", url="https://www.instagram.com/invites/contact/?i=1bk9e2vezw3ma&utm_content=8yz3iiq"),
+                    InlineKeyboardButton(text="MᴜsɪᴄPʟᴀʏᴇʀ", callback_data="niskalamusic_"),
                  ],
                  [
                     InlineKeyboardButton(text="Bᴀᴄᴋ", callback_data="niskala_back"),
