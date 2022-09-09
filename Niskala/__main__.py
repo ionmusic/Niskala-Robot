@@ -117,7 +117,7 @@ HELP_STRINGS = """
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- @IDnyaAL 🤗"""
+ @IDnyaAL"""
 
 IMPORTED = {}
 MIGRATEABLE = []
