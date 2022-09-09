@@ -499,25 +499,6 @@ def niskala_about_callback(update, context):
                 ]
             ),
          )
-     elif query.data == "niskalamusic_":
-        query.message.edit_text(
-            text=f"*BAGJA KUMAYANGAN*"
-
-            f"\n*Berikut Perintah Musik Yang Tersedia:*"
-            f"\n\n🔰 Perintah Semua Orang"
-            f"\n» `/Play` - Ketik Link Atau Judul Lagu."
-            f"\n\n👮‍♂️ Perintah Admin"
-            f"\n» `/Pause` - Untuk Menjeda Trek Yang Sedang Diputar."
-            f"\n» `/Resume` - Untuk Memutar Trek Yang Dijeda Sebelumnya."
-            f"\n» `/End` - Untuk Menghentikan Pemutaran Trek Dan Menghapus Antrean."
-            f"\n» `/Skip` - Untuk Pergi Ke Trek Selanjutnya."
-            f"\n\n*Jika Ada Keluhan. Harap Hubungi @IDnyaAL*",
-            parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Bᴀᴄᴋ", callback_data="niskala_about")]]
-            ),
-        )
         
 def get_help(update: Update, context: CallbackContext):
     chat = update.effective_chat  # type: Optional[Chat]
