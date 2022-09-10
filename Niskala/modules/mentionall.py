@@ -84,4 +84,12 @@ async def cancel_spam(event):
         return await event.respond("Stopped.")
 
 
-__mod_name__ = "Mentions"
+__mod_name__ = "Mᴇɴᴛɪᴏɴs"
+
+__help__ = """
+Mentions all is a module to tag all members of your group; same as bot mentions.
+This is help menu for Mentions.
+❂ /all <word> - Mentions All
+❂ /cancel - Stop Mentions
+
+Example : /all Up There is TMO."""
