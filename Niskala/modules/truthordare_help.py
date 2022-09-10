@@ -8,4 +8,4 @@ __help__ = """
      ❂ /truth - Question
      ❂ /dare - Challenges
 
-     Notes : If you have suggestions for words for truth or dare, you can Pc @IDnyaAL so that they can be added.
+     Notes : If you have suggestions for words for truth or dare, you can Pc @IDnyaAL so that they can be added."""
