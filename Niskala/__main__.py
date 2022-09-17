@@ -113,7 +113,7 @@ HELP_STRINGS = """
 `Klik Tombol Di Bawah Untuk Mendapatkan Deskripsi Tentang Perintah Spesifik.`
 » /Start : `Untuk Memulai Aku !!`
 » /Help : `Perintah Untuk Membantu Kamu.`
-» /Settings : `Membuat Saya Menunjukkan Pengaturan Obrolan Saat Ini (Hanya Obrolan Grup).`"""
+» /Settings : `Membuat Saya Menunjukkan Pengaturan Obrolan.`"""
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
