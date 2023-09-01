@@ -23,7 +23,7 @@ from ptbcontrib.postgres_persistence import PostgresPersistence
 StartTime = time.time()
 
 def get_user_list(__init__, key):
-    with open("{}/Niskala/{}".format(os.getcwd(), __init__), "r") as json_file:
+    with open(f"{os.getcwd()}/Niskala/{__init__}", "r") as json_file:
         return json.load(json_file)[key]
 
 # enable logging
@@ -257,8 +257,7 @@ pbot = Client(
     bot_token=TOKEN,
     workers=min(32, os.cpu_count() + 4),
 )
-apps = []
-apps.append(pbot)
+apps = [pbot]
 loop = asyncio.get_event_loop()
 
 async def get_entity(client, entity):
